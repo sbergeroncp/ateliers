@@ -10,7 +10,7 @@ Fais apparaître une image lorsque le micro:bit est activé.
 
 Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||basic: toujours||``.
 
-Dessine une image dans le bloc ``|| basic: montrer l'icône ||``
+Dessine une image dans le bloc ``|| basic: montrer l'icône ||``.
 
 ```blocks
 

@@ -10,7 +10,7 @@ Fais apparaître une image lorsque le micro:bit est activé.
 
 Ajoute le bloc ``|| basic: montrer l'icône ||`` dans le bloc ``||basic: toujours||``.
 
-Choisis une icône dans le bloc ``|| basic: montrer l'icône ||``
+Choisis une icône dans le bloc ``|| basic: montrer l'icône ||``.
 
 
 ```blocks
