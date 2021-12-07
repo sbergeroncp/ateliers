@@ -4,7 +4,7 @@ Supprime les blocs ``||basic:au démarrage||`` et ``||basic:toujours||``.
 
 ## @showdialog
 
-Fais débuter une animation d'un battement de coeur lorsque le micro:bit est secoué.
+Crée l'animation d'un battement de coeur lorsque le micro:bit est secoué.
 
 ## Étape 2
 
