@@ -8,14 +8,20 @@ Fais apparaître une image lorsque le micro:bit est activé.
 
 ## Étape 2
 
-Ajoute le bloc ``|| basic: montrer l'icône ||`` dans le bloc ``||basic: toujours||``.
+Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||basic: toujours||``.
 
-Choisis une icône dans le bloc ``|| basic: montrer l'icône ||``
-
+Dessine une image dans le bloc ``|| basic: montrer l'icône ||``
 
 ```blocks
+
 basic.forever(function () {
-    basic.showIcon(IconNames.Heart)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
 })
 
 ```

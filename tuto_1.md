@@ -19,3 +19,9 @@ Efface le mot "Hello" du bloc ``|| basic: afficher texte ||``.
 basic.showString("Hello!")
 
 ```
+
+## Étape 3
+
+Télécharge le programme dans le micro:bit.
+
+Teste le programme!
