@@ -38,7 +38,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 4
 
-Ajoute le bloc ``||logic: si vrai alors||`` sous le bloc ``||input: lorsque secouer||``.
+Ajoute le bloc ``||logic: si vrai alors||`` sous le bloc ``||variables: définir Main||``.
 
 ```blocks
 
@@ -70,11 +70,11 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 6
 
-Remplace la valeur "0" du bloc ``||logic: "0" = "0"||`` par le bloc ``||variables:Main||``.
+Remplace la valeur "0" de gauche du bloc ``||logic: "0" = "0"||`` par le bloc ``||variables:Main||``.
 
-Remplace la valeur "0" du bloc ``||logic: "0" = "0"||`` par la valeur "1".
+Remplace la valeur "0" de droite du bloc ``||logic: "0" = "0"||`` par la valeur "1".
 
-La valeur 1 représente les ciseaux.
+La valeur 1 représente les ``||logic: ciseaux||``.
 
 ```blocks
 
