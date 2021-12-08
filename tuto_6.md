@@ -4,7 +4,7 @@ Supprime le bloc ``||basic:au démarrage||``.
 
 ## @showdialog
 
-Fais afficher la température ambiante sur l'écran du micro:bit.
+Affiche la température ambiante sur l'écran du micro:bit.
 
 ## Étape 2
 
@@ -82,3 +82,5 @@ basic.forever(function () {
 Télécharge le programme dans le micro:bit.
 
 Teste le programme!
+
+Manipule le micro:bit. Que remarques-tu?
