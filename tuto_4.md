@@ -1,10 +1,10 @@
+## @showdialog
+
+Fais apparaître une image lorsqu'un bouton du micro:bit est pressé.
+
 ## Étape 1
 
 Supprime les blocs ``||basic: au démarrage||`` et ``||basic: toujours||``.
-
-## @showdialog
-
-Fais apparaître une image lorsque le bouton A du micro:bit est pressé.
 
 ## Étape 2
 

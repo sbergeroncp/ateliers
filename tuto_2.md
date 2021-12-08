@@ -1,10 +1,10 @@
-## Étape 1
-
-Supprime le bloc ``||basic:au démarrage||``.
-
 ## @showdialog
 
 Fais apparaître une image lorsque le micro:bit est activé.
+
+## Étape 1
+
+Supprime le bloc ``||basic:au démarrage||``.
 
 ## Étape 2
 

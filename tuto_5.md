@@ -1,10 +1,10 @@
-## Étape 1
-
-Supprime les blocs ``||basic:au démarrage||`` et ``||basic:toujours||``.
-
 ## @showdialog
 
 Crée l'animation d'un battement de coeur lorsque le micro:bit est secoué.
+
+## Étape 1
+
+Supprime les blocs ``||basic:au démarrage||`` et ``||basic:toujours||``.
 
 ## Étape 2
 

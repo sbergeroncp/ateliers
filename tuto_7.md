@@ -1,10 +1,10 @@
-## Étape 1
-
-Supprime le bloc ``||basic:au démarrage||``.
-
 ## @showdialog
 
 Affiche une image sur l'écran du micro:bit en fonction du niveau d'intensité lumineuse de la pièce.
+
+## Étape 1
+
+Supprime le bloc ``||basic:au démarrage||``.
 
 ## Étape 2
 

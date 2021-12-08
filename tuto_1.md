@@ -1,10 +1,10 @@
-## Étape 1
-
-Supprime le bloc ``||basic:toujours||``.
-
 ## @showdialog
 
 Fais apparaître tes initiales lorsque le micro:bit est activé.
+
+## Étape 1
+
+Supprime le bloc ``||basic:toujours||``.
 
 ## Étape 2
 

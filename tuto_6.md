@@ -1,10 +1,10 @@
-## Étape 1
-
-Supprime le bloc ``||basic:au démarrage||``.
-
 ## @showdialog
 
 Affiche la température ambiante sur l'écran du micro:bit.
+
+## Étape 1
+
+Supprime le bloc ``||basic:au démarrage||``.
 
 ## Étape 2
 
