@@ -2,6 +2,12 @@
 
 Une boussole pour s'orienter!
 
+## @showdialog
+
+Voici les points cardinaux importants sur une boussole.
+
+![Atelier](https://cdn.sanity.io/images/ajwvhvgo/production/c1ba4627f246bc638f48cd51afb80342fd1db540-2019x1878.png?w=653&q=80&fit=max&auto=format)
+
 ## Étape 1
 
 Supprime le bloc ``||basic:au démarrage||``.
@@ -23,7 +29,7 @@ basic.forever(function () {
 
 ## Étape 3
 
-Remplace la valeur "0" dans le bloc ``||variables: définir Main||`` par le bloc ``||input: direction de la boussole||``.
+Remplace la valeur "0" dans le bloc ``||variables: définir Degres||`` par le bloc ``||input: direction de la boussole||``.
 
 
 ```blocks
