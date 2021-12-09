@@ -25,7 +25,8 @@
         "tuto_11.md",
         "tuto_12.md",
         "_locales/fr/tuto_13.md",
-        "tuto_13.md"
+        "tuto_13.md",
+        "tuto_14.md"
     ],
     "testFiles": [
         "test.ts"
