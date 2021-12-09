@@ -123,7 +123,7 @@ basic.forever(function () {
 
 ## Étape 8
 
-Ajoute le bloc ``|| basic: montrer l'icône ||`` sous le bloc ``|| variables: sinon ||``.
+Ajoute le bloc ``|| basic: montrer l'icône ||`` sous le bloc ``|| logic: sinon ||``.
 
 Choisis une icône. 
 
