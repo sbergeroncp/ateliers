@@ -1,6 +1,6 @@
 ## @showdialog
 
-Lancer du dé!
+Le lancer du dé !
 
 ## Étape 1
 
