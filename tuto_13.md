@@ -10,7 +10,7 @@ Supprime le bloc ``||basic:toujours||``.
 
 Ajoute le bloc ``|| basic: montrer leds ||`` dans le bloc ``||basic: au démarrage||``.
 
-Dessine une boule de neige dans le bloc ``|| basic: montrer LEDs ||``.
+Dessine une boule de neige dans le bloc ``|| basic: montrer LEDs ||``
 
 
 ```blocks
