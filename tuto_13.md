@@ -48,7 +48,7 @@ function neige3 () {
 
 ## Étape 4
 
-Ajoute le bloc ``||functions: appel neige1||`` dans le bloc ``||input: lorsque secouer||``.
+Ajoute le bloc ``||functions: appel neige1||`` dans le bloc ``||input: lorsque le bouton A est pressé||``.
 
 Ajoute le bloc ``||functions: appel neige2||`` sous le bloc ``||functions: appel neige1||``.
 
@@ -56,7 +56,7 @@ Ajoute le bloc ``||functions: appel neige1||`` sous le bloc ``||functions: appel
 
 ```blocks
 
-input.onGesture(Gesture.Shake, function () {
+input.onButtonPressed(Button.A, function () {
     neige1()
     neige2()
     neige3()
