@@ -33,7 +33,7 @@ Ajoute le bloc ``||functions: appel neige1||`` dans le bloc ``||input: lorsque l
 
 Ajoute le bloc ``||functions: appel neige2||`` sous le bloc ``||functions: appel neige1||``.
 
-Ajoute le bloc ``||functions: appel neige1||`` sous le bloc ``||functions: appel neige2||``.
+Ajoute le bloc ``||functions: appel neige2||`` sous le bloc ``||functions: appel neige3||``.
 
 ```blocks
 
