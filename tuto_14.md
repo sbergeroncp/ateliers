@@ -123,9 +123,37 @@ function neige1 () {
 
 ## Étape 8
 
-Répète les mêmes étapes pour le bloc ``||functions: fonction neige2||`` et le bloc ``||functions: fonction neige3||``.
+Ajoute le bloc ``||loops: répéter 3 fois||`` dans le bloc ``||input: lorsque le bouton A est pressé||``.
+
+Et ajoute le bloc ``||functions: appel neige1||`` , le bloc ``||functions: appel neige2||`` et le bloc ``||functions: appel neige3||`` dans la boucle.
+
+```blocks
+
+input.onButtonPressed(Button.A, function () {
+    for (let index = 0; index < 3; index++) {
+        neige1()
+        neige2()
+        neige3()
+    }
+})
+function neige1 () {
+	
+}
+function neige2 () {
+	
+}
+function neige3 () {
+	
+}
+
+
+```
 
 ## Étape 9
+
+Répète les mêmes étapes pour le bloc ``||functions: fonction neige2||`` et le bloc ``||functions: fonction neige3||``.
+
+## Étape 10
 
 Télécharge le programme dans le micro:bit.
 
