@@ -1,6 +1,6 @@
 ## @showdialog
 
-Compose une contine!
+Compose une mélodie !
 
 ## Étape 1
 
