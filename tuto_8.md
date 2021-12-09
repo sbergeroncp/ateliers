@@ -8,7 +8,7 @@ Supprime les blocs ``||basic:au démarrage||`` et ``||basic:toujours||``.
 
 ## Étape 2
 
-Ajoute le bloc ``||logic: "si alors sinon"||`` dans le bloc ``||input: lorsque secouer||``.
+Ajoute le bloc ``||logic: "si vrai alors sinon"||`` dans le bloc ``||input: lorsque secouer||``.
 
 ```blocks
 
@@ -24,7 +24,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 3
 
-Remplace la valeur "vrai" dans le bloc ``||logic: "si alors sinon"||`` par le bloc ``||math: choisir au hasard vrai ou faux||``.
+Remplace la valeur "vrai" dans le bloc ``||logic: "si vrai alors sinon"||`` par le bloc ``||math: choisir au hasard vrai ou faux||``.
 
 ```blocks
 
