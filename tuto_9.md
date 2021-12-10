@@ -54,14 +54,14 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 5
 
-Ajoute le bloc ``||logic: "0" = "0"||`` dans le bloc ``||logic: si||``.
+Ajoute le bloc ``||logic: "0" = "0"||`` dans le bloc ``||logic: si vrai alors||``.
 
 ```blocks
 
 let Nombre = 0
 input.onGesture(Gesture.Shake, function () {
     Nombre = randint(1, 6)
-    if (0 == 1) {
+    if (0 == 0) {
     	
     }
 })
@@ -118,6 +118,8 @@ input.onGesture(Gesture.Shake, function () {
 Oups! Les étapes pour programmer les nombres 2 à 6 ont disparu.
 
 Programme le micro:bit pour qu'il puisse afficher les autres nombres du dé.
+
+Duplique les blocs de programmation en cliquant droit sur le bloc ``||logic: si alors||`` et modifie les éléments.
 
 ## Étape 8
 
