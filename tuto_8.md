@@ -1,6 +1,6 @@
 ## @showdialog
 
-Pile ou face ?
+Vrai ou faux ?
 
 ## Étape 1
 
@@ -46,7 +46,7 @@ Ajoute le bloc ``||basic: montrer l'icone||`` dans le bloc ``||logic: si||``.
 
 input.onGesture(Gesture.Shake, function () {
     if (Math.randomBoolean()) {
-        basic.showIcon(IconNames.Ghost)
+        basic.showIcon(IconNames.Yes)
     } else {
     	
     }
@@ -62,9 +62,9 @@ Ajoute le bloc ``||basic: montrer l'icone||`` dans le bloc ``||logic: alors||``.
 
 input.onGesture(Gesture.Shake, function () {
     if (Math.randomBoolean()) {
-        basic.showIcon(IconNames.Ghost)
+        basic.showIcon(IconNames.Yes)
     } else {
-        basic.showIcon(IconNames.Square)
+        basic.showIcon(IconNames.No)
     }
 })
 
@@ -81,9 +81,9 @@ input.onGesture(Gesture.Shake, function () {
     	
     }
     if (Math.randomBoolean()) {
-        basic.showIcon(IconNames.Ghost)
+        basic.showIcon(IconNames.Yes)
     } else {
-        basic.showIcon(IconNames.Square)
+        basic.showIcon(IconNames.No)
     }
 })
 
@@ -95,17 +95,20 @@ input.onGesture(Gesture.Shake, function () {
 
 Ajoute les blocs ``||basic: montrer l'icone||`` dans le bloc ``||loops: "répéter deux fois"||``.
 
+Regarde les icones dans l'indice.
+
 ```blocks
 
 input.onGesture(Gesture.Shake, function () {
     for (let index = 0; index < 2; index++) {
         basic.showIcon(IconNames.Diamond)
         basic.showIcon(IconNames.SmallDiamond)
+        basic.showIcon(IconNames.Chessboard)
     }
     if (Math.randomBoolean()) {
-        basic.showIcon(IconNames.Ghost)
+        basic.showIcon(IconNames.Yes)
     } else {
-        basic.showIcon(IconNames.Square)
+        basic.showIcon(IconNames.No)
     }
 })
 
@@ -115,6 +118,8 @@ input.onGesture(Gesture.Shake, function () {
 
 Télécharge le programme dans le micro:bit.
 
-Teste le programme!
+Teste le programme !
 
-Manipule le micro:bit. Que remarques-tu?
+Dis une affirmation et secoue le micro:bit.
+
+Que remarques-tu ?
