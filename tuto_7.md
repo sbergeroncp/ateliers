@@ -97,7 +97,7 @@ basic.forever(function () {
 
 Ajoute le bloc ``|| basic: Montrer LEDs ||`` sous le bloc ``|| variables: si ||``.
 
-Dessine une image de ton choix. 
+Remplis le LEDs. Active toutes les LEDs du micro:bit.
 
 Lorsque le niveau d'intensité lumineuse sera sous 40, l'image choisie devrait s'afficher sur l'écran du micro:bit.
 
@@ -125,7 +125,7 @@ basic.forever(function () {
 
 Ajoute le bloc ``|| basic: montrer l'icône ||`` sous le bloc ``|| logic: sinon ||``.
 
-Choisis une icône. 
+Active seulement la LED centrale du micro:bit.
 
 Lorsque le niveau d'intensité lumineuse sera au-dessus de 40, l'icône choisie devrait s'afficher sur l'écran du micro:bit.
 
@@ -143,7 +143,13 @@ basic.forever(function () {
             . . . . .
             `)
     } else {
-        basic.showIcon(IconNames.No)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
     }
 })
 
