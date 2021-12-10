@@ -45,7 +45,7 @@ basic.forever(function () {
 
 Ajoute le bloc ``||logic: si vrai alors sinon si||`` sous le bloc ``||variables: définir Degres||``.
 
-Ajoute 4 conditions en tout.
+Ajoute 5 conditions en tout.
 
 ```blocks
 
@@ -185,6 +185,10 @@ La valeur < 225 représente le point cardninal ``||input: sud||``. La valeur < 3
 
 Télécharge le programme dans le micro:bit.
 
+Tu devras sans doute calibrer la boussole avant de l'utiliser.
+
+Tourne le microbit doucement dans tous les sens pour activer toutes les LEDs de l'écran.
+
 Teste le programme ! 
 
-Quel élément retrouve-t-on au nord ? au sud ? à l'est ? à l'ouest ?
+Quel bâtiment et/ou lieu retrouve-t-on au nord de l'école ? au sud ? à l'est ? à l'ouest ?
