@@ -57,7 +57,9 @@ basic.forever(function () {
     } else if (false) {
     	
     } else if (false) {
-    	
+
+    } else if (false) {
+
     } else {
     	
     }
@@ -78,6 +80,8 @@ basic.forever(function () {
     	
     } else if (false) {
     	
+    } else if (false) {
+
     } else if (false) {
     	
     } else {
@@ -103,7 +107,9 @@ basic.forever(function () {
     if (Degres < 45) {
     	
     } else if (false) {
-    	
+
+    } else if (false) {
+
     } else if (false) {
     	
     } else {
@@ -127,7 +133,9 @@ basic.forever(function () {
     if (Degres < 45) {
         basic.showString("N")
     } else if (false) {
-    	
+
+    } else if (false) {
+
     } else if (false) {
     	
     } else {
@@ -150,6 +158,8 @@ basic.forever(function () {
     Degres = input.compassHeading()
     if (Degres < 45) {
         basic.showString("N")
+    } else if (false) {
+
     } else if (false) {
     	
     } else if (false) {
