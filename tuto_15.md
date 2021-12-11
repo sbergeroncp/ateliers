@@ -1,127 +1,126 @@
 ## @showdialog
 
-Le lancer du dé !
+Le décompte!
 
 ## Étape 1
 
-Supprime les blocs ``||basic:au démarrage||`` et ``||basic:toujours||``.
+Supprime le bloc ``||basic:toujours||``.
 
 ## Étape 2
 
-Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Nombre||``.
+Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Temps||``.
 
-Ajoute le bloc ``||variables: définir Nombre à "0"||`` dans le bloc ``||input: lorsque secouer||``.
+Ajoute le bloc ``||variables: définir Temps à "4"||`` dans le bloc ``||input: lorsque secouer||``.
 
 ```blocks
 
-let Nombre = 0
-input.onGesture(Gesture.Shake, function () {
-    Nombre = 0
-})
+let Temps = 4
 
 ```
 
 ## Étape 3
 
-Remplace la valeur "0" dans le bloc ``||variables: définir nombre||`` par le bloc ``||math: choisir au hasard de "0" à "10"||``.
-
-Remplace les valeurs "0" et "10" dans le bloc ``||math: choisir au hasard de "0" à "10"||`` par les valeurs "1" et "6".
+Ajoute le bloc ``||loops: répéter 3 fois||`` sous le bloc ``||variables: définir Nombre à "4"||``.
 
 ```blocks
 
-let Nombre = 0
-input.onGesture(Gesture.Shake, function () {
-    Nombre = randint(1, 6)
-})
+let Temps = 4
+for (let index = 0; index < 3; index++) {
+	
+}
 
 ```
 
 ## Étape 4
 
-Ajoute le bloc ``||logic: si vrai alors||`` sous le bloc ``||input: lorsque secouer||``.
+Ajoute le bloc ``||music: jouer ton Middle C pendant 1/4 temps||`` dans le bloc ``||loops: répéter 3 fois||``.
 
 ```blocks
 
-let Nombre = 0
-input.onGesture(Gesture.Shake, function () {
-    Nombre = randint(1, 6)
-    if (true) {
-        
-    }
-})
+let Temps = 4
+for (let index = 0; index < 3; index++) {
+    music.playTone(262, music.beat(BeatFraction.Quarter))
+}
 
 ```
 
 ## Étape 5
 
-Ajoute le bloc ``||logic: "0" = "0"||`` dans le bloc ``||logic: si vrai alors||``.
+Ajoute le bloc ``||basic: montrer nombre||`` sous le bloc ``||music: jouer ton Middle C pendant 1/4 temps||``.
+
+Ajoute le bloc ``||basic: pause (ms) 100||`` sous le bloc ``||basic: montrer nombre||``.
 
 ```blocks
 
-let Nombre = 0
-input.onGesture(Gesture.Shake, function () {
-    Nombre = randint(1, 6)
-    if (0 == 0) {
-        
-    }
-})
+let Temps = 4
+for (let index = 0; index < 3; index++) {
+    music.playTone(262, music.beat(BeatFraction.Quarter))
+    basic.showNumber(0)
+    basic.pause(100)
+}
 
 ```
 
 ## Étape 6
 
-Remplace la valeur "0" du bloc ``||logic: "0" = "0"||`` par le bloc ``||variables:Nombre||``.
+Ajoute le bloc ``||math: "0" - "0"||`` dans le bloc ``||basic: montrer nombre||``.
 
-Remplace la valeur "0" du bloc ``||logic: "0" = "0"||`` par la valeur "1".
+Remplace la valeur "0" (gauche) par le bloc ``||variables:Temps||``.
+
+Remplace la valeur "0" (droite) par la valeur "1". 
 
 ```blocks
 
-let Nombre = 0
-input.onGesture(Gesture.Shake, function () {
-    Nombre = randint(1, 6)
-    if (Nombre == 1) {
-        
-    }
-})
+let Temps = 4
+for (let index = 0; index < 3; index++) {
+    music.playTone(262, music.beat(BeatFraction.Quarter))
+    basic.showNumber(Temps - 1)
+    basic.pause(100)
+}
 
 ```
 
 ## Étape 7
 
-Ajoute le bloc ``||basic: montrer LEDs||`` sous le bloc ``||logic: "si Nombre = 1"||``.
+Ajoute le bloc ``||variables: modifier Temps 1||`` sous le bloc ``||basic: pause (ms) 100)||``.
 
-Dessine le chiffre 1.
-
-Ajoute le bloc ``||basic: pause (ms) 1000||`` sous le bloc ``||basic: montrer LEDs||``.
+Remplace la valeur "1" par "-1" dans le bloc ``||variables: modifier Temps 1||``.
 
 ```blocks
 
-let Nombre = 0
-input.onGesture(Gesture.Shake, function () {
-    Nombre = randint(1, 6)
-    if (Nombre == 1) {
-        basic.showLeds(`
-            . . # . .
-            . # # . .
-            . . # . .
-            . . # . .
-            . # # # .
-            `)
-        basic.pause(1000)
-    }
-})
+let Temps = 4
+for (let index = 0; index < 3; index++) {
+    music.playTone(262, music.beat(BeatFraction.Quarter))
+    basic.showNumber(Temps - 1)
+    basic.pause(100)
+    Temps += -1
+}
 
 ```
 
-## @showdialog
-
-Oups! Les étapes pour programmer les nombres 2 à 6 ont disparu.
-
-Programme le micro:bit pour qu'il puisse afficher les autres nombres du dé.
-
-Duplique les blocs de programmation en cliquant droit sur le bloc ``||logic: si alors||`` et modifie les éléments.
-
 ## Étape 8
+
+Ajoute le bloc ``||music: jouer ton Middle G pendant 1 temps||`` sous le bloc ``||loops: répéter 3 fois||``.
+
+Ajoute le bloc ``||basic:afficher texte "Hello!"||`` sous le bloc ``||music: jouer ton Middle G pendant 1 temps||``.
+
+Remplace le texte "Hello!" par "Go!".
+
+```blocks
+
+let Temps = 4
+for (let index = 0; index < 3; index++) {
+    music.playTone(262, music.beat(BeatFraction.Quarter))
+    basic.showNumber(Temps - 1)
+    basic.pause(100)
+    Temps += -1
+}
+music.playTone(392, music.beat(BeatFraction.Whole))
+basic.showString("Go")
+
+```
+
+## Étape 10
 
 Télécharge le programme dans le micro:bit.
 
