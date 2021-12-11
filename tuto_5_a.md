@@ -1,6 +1,8 @@
 ## @showdialog
 Voici un projet à réaliser en équipe de 2, 3 ou 4 élèves!
 
+![Atelier](https://pxt.azureedge.net/blob/d8cf0f404e04aa67a9f8ed773b2386aa202776de/static/mb/projects/a9-radio.png)
+
 Envoie un message secret aux membres de ton équipe !
 
 ## Étape 1

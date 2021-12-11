@@ -1,6 +1,8 @@
 ## @showdialog
 
-Amis ou non ?
+Le test ultime de l'amitié !
+
+![Atelier](https://i.pinimg.com/originals/e9/ff/44/e9ff4450d23b0f05a45840d9d75d7c10.png)
 
 ## Étape 1
 
@@ -67,8 +69,10 @@ Télécharge le programme dans le micro:bit.
 
 Teste le programme avec les membres de ton équipe!
 
+![Atelier](https://i.pinimg.com/originals/e9/ff/44/e9ff4450d23b0f05a45840d9d75d7c10.png)
+
 Tiens la main d'un élève dans le but de créer un circuit électrique.
 
 Ensuite, un élève appuie sur la broche "P0" pendant qu'un autre élève appuie sur la broche "GND".
 
-Plus le nombre est élevé, plus votre amitié durera longtemps! C'est scientifique.
+Plus le nombre est élevé, plus votre amitié est solide! C'est scientifique.
