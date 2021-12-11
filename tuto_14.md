@@ -151,9 +151,21 @@ function neige3 () {
 
 ## Étape 9
 
-Répète les mêmes étapes pour le bloc ``||functions: fonction neige2||`` et le bloc ``||functions: fonction neige3||``.
+Duplique les mêmes étapes pour le bloc ``||functions: fonction neige2||`` et le bloc ``||functions: fonction neige3||``.
 
 ## Étape 10
+
+Ajoute le bloc ``||basic: effacer l'écran||`` sous le bloc ``||input: lorsque le bouton B est pressé||``.
+
+```blocks
+
+input.onButtonPressed(Button.B, function () {
+    basic.clearScreen()
+})
+
+```
+
+## Étape 11
 
 Télécharge le programme dans le micro:bit.
 
