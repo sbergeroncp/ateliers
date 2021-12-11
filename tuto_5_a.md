@@ -1,0 +1,78 @@
+## @showdialog
+Voici un projet à réaliser en équipe de 2, 3 ou 4 élèves!
+
+Envoie un message secret aux membres de ton équipe !
+
+## Étape 1
+
+Supprime le bloc ``||basic:toujours||``.
+
+## Étape 2
+
+Ajoute le bloc ``|| radio: radio définir groupe ||`` dans le bloc ``||basic: toujours||``.
+
+Remplace la valeur "0" par un nombre de 1 à 10.
+
+Chaque membre de l'équipe doit utiliser le même nombre. 
+
+```blocks
+
+radio.setGroup(1)
+
+```
+
+## Étape 3
+
+Ajoute le bloc ``|| radio: envoyer la chaine par radio ||`` dans le bloc ``|| input: lorsque le bouton A+B est pressé ||``.
+
+Modifie le message affiché dans le bloc ``|| radio: envoyer la chaine par radio ||``.
+
+```blocks
+
+input.onButtonPressed(Button.AB, function () {
+    radio.sendString("Salut!")
+})
+radio.setGroup(1)
+
+```
+
+## Étape 4
+
+Ajoute le bloc ``|| basic: afficher texte ||`` dans le bloc ``|| radio: quand une donnée est reçue par radio ||``.
+
+
+```blocks
+
+input.onButtonPressed(Button.AB, function () {
+    radio.sendString("")
+})
+radio.onReceivedString(function (receivedString) {
+    basic.showString("Hello!")
+})
+radio.setGroup(1)
+
+```
+
+## Étape 5
+
+Glisse le bloc ``|| variables: receivedString ||`` du bloc ``|| radio: quand une donnée est reçue par radio ||`` dans le bloc ``|| basic: afficher texte ||``.
+
+Regarde attentivement l'indice!
+
+```blocks
+
+input.onButtonPressed(Button.AB, function () {
+    radio.sendString("")
+})
+radio.onReceivedString(function (receivedString) {
+    basic.showString(receivedString)
+})
+radio.setGroup(1)
+
+```
+
+## Étape 6
+
+Télécharge le programme dans le micro:bit.
+
+Teste le programme avec les membres de ton équipe!
