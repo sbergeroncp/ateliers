@@ -65,7 +65,7 @@ input.onButtonPressed(Button.A, function () {
     }
     music.playTone(330, music.beat(BeatFraction.Whole))
     music.playTone(349, music.beat(BeatFraction.Whole))
-    music.playTone(392, music.beat(BeatFraction.Whole))
+    music.playTone(392, music.beat(BeatFraction.Double))
 })
 
 
@@ -96,7 +96,11 @@ input.onButtonPressed(Button.A, function () {
 
 ## Étape 7
 
-Continue à programmer la chanson!
+Continue à programmer la chanson.
+
+Regarde attentivement l'indice, car il y a plusieurs notes à ajouter!
+
+Bonne chance!
 
 ```blocks
 
