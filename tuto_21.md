@@ -14,10 +14,8 @@ Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||``.
 
 ## Étape 2 
 
- Ajoute le bloc ``|| pins: écrire sur la broche  ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
+Ajoute le bloc ``|| pins: écrire sur la broche  ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
  
-Modifie les valeurs du bloc ``|| pins: écrire sur la broche  ||``.
-
 Remplace la valeur sur la broche "P0" par "1".
  
 
@@ -33,8 +31,6 @@ input.onButtonPressed(Button.A, function () {
  
 Ajoute le bloc ``|| pins: écrire sur la broche  ||`` dans le bloc ``||input:lorsque le bouton B est pressé||``. 
  
-Modifie les valeurs du bloc ``|| pins: écrire sur la broche  ||``.
-
 Remplace la valeur sur la broche "P0" par "0".
  
 ```blocks 
