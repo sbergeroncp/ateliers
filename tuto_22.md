@@ -1,8 +1,8 @@
 # Niveau 5
 
-# Un circuit électrique et numérique
+# Un circuit électrique et numérique! 
 
-## @showdialog 
+## @showdialog  
 
 Programme un éclairage de sécurité.
  
@@ -14,7 +14,7 @@ Supprime le bloc ``|| basic:au démarrage ||``.
 
 ## Étape 2 
 
- Ajoute le bloc ``|| logic: "si alors sinon"  ||`` dans le bloc ``|| basic:toujours ||``. 
+Ajoute le bloc ``|| logic: "si vrai alors sinon"  ||`` dans le bloc ``|| basic:toujours ||``. 
  
 
 ```blocks 
@@ -29,15 +29,31 @@ basic.forever(function () {
 
 ``` 
 
-
 ## Étape 3 
+
+Remplace la valeur ``|| logic:"vrai"||`` par le bloc ``|| logic:"0 < 0"||`` dans le bloc ``|| logic: "si vrai alors sinon"||``. 
  
-Ajoute le bloc ``|| input: niveau d'intensité lumineuse  ||`` dans le bloc ``|| logic:"0 < 0"||``. 
+Regarde l'indice pour connaître les valeurs à changer.
+
+```blocks 
+
+basic.forever(function () {
+    if (0 < 0) {
+    	
+    } else {
+    	
+    }
+})
+```
+
+## Étape 4 
  
-Modifie la valeur de droite ``|| logic:"0 < 0"||`` à 40.
+Modifie la valeur "0" (gauche) du bloc ``|| logic:"0 < 0"||`` par le bloc ``|| input: niveau d'intensité lumineuse  ||``. 
+ 
+Modifie la valeur "0" (droite) du bloc ``|| logic:"0 < 0"||`` par la valeur "40".
 
 Autrement dit, "si l'intensité de lumière est inférieure à "40"... un événement doit se produire.
- 
+
 ```blocks 
 
 basic.forever(function () {
@@ -50,14 +66,13 @@ basic.forever(function () {
 
 ``` 
 
-## Étape 4 
+## Étape 5 
  
-Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
+Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors"  ||``. 
  
-Modifie les valeurs du bloc ``|| pins: écrire sur la broche  ||``.
+La valeur "1" permet au courant de passer dans le circuit.
 
-Écrire sur la broche "P0" la valeur "1". La valeur "1" permet au courant de passer dans le circuit.
-
+Regarde l'indice pour connaître les valeurs à changer.
  
 ```blocks 
 
@@ -73,11 +88,11 @@ basic.forever(function () {
 
 ## Étape 6 
  
-Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
- 
-Modifie les valeurs du bloc ``|| pins: écrire sur la broche  ||``.
+Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "sinon"  ||``. 
 
-Écrire sur la broche "P0" la valeur "0". La valeur "0" empêche le courant de passer dans le circuit.
+La valeur "0" empêche le courant de passer dans le circuit.
+
+Regarde l'indice pour connaître les valeurs à changer.
 
  
 ```blocks 
@@ -94,9 +109,9 @@ basic.forever(function () {
 
 ## Étape 7 
  
-Crée une ``|| variables: LED  ||`` et donne lui le nom ``|| variables: LED  ||``. 
+Crée une ``|| variables: variable  ||`` et donne lui le nom ``|| variables: LED  ||``. 
 
-Ajoute le bloc ``|| variables: définir LED à "0" ||`` sous le bloc ``|| basic: toujours  ||``. 
+Ajoute le bloc ``|| variables: définir LED à "0" ||`` sous le bloc ``|| basic: toujours  ||``.
 
 ```blocks
 
@@ -114,7 +129,7 @@ basic.forever(function () {
 
 ## Étape 8
  
-Ajoute le bloc ``|| input: niveau de luminosité  ||`` dans le bloc ``|| variables: définir "LED" à "0"  ||``.
+Remplace la valeur "0" du bloc ``|| variables: définir "LED" à "0"  ||`` par le bloc ``|| input: niveau d'intensité luminosité  ||``.
 
 ```blocks 
 
