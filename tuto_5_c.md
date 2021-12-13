@@ -100,5 +100,3 @@ radio.onReceivedString(function (receivedNumber) {
 Télécharge le programme dans le micro:bit.
 
 Teste le code avec un autre élève qui a le même programme.
-
-À quelle distance le micro:bit te permet-il de t'approcher d'un autre élève ?
