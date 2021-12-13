@@ -1,158 +1,81 @@
 # Niveau 5
 
-# Un circuit électrique et numérique
+# Un circuit électrique et numérique! 
 
-## @showdialog 
-
-Programme un éclairage de sécurité.
+Transforme ton micro:bit en un circuit électrique et numérique! 
  
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_f_1.jpg?raw=true) 
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_5.jpg?raw=true) 
 
 ## Étape 1 
 
-Supprime le bloc ``|| basic:au démarrage ||``. 
+Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||``. 
 
 ## Étape 2 
 
- Ajoute le bloc ``|| logic: "si alors sinon"  ||`` dans le bloc ``|| basic:toujours ||``. 
+ Ajoute le bloc ``|| pins: Écrire sur la broche  ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
+ 
+Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
+
+Remplace la valeur sur la broche "P0" par "1".
  
 
 ```blocks 
 
-basic.forever(function () {
-    if (true) {
-    	
-    } else {
-    	
-    }
+input.onButtonPressed(Button.A, function () {
+    pins.digitalWritePin(DigitalPin.P0, 1)
 })
 
 ``` 
-
 
 ## Étape 3 
  
-Ajoute le bloc ``|| input: niveau d'intensité lumineuse  ||`` dans le bloc ``|| logic:"0 < 0"||``. 
+Ajoute le bloc ``|| pins: Écrire sur la broche  ||`` dans le bloc ``||input:lorsque le bouton B est pressé||``. 
  
-Modifie la valeur de droite ``|| logic:"0 < 0"||`` à 40.
+Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
 
-Autrement dit, "si l'intensité de lumière est inférieure à "40"... un événement doit se produire.
- 
-```blocks 
-
-basic.forever(function () {
-    if (input.lightLevel() < 40) {
-    	
-    } else {
-    	
-    }
-})
-
-``` 
-
-## Étape 4 
- 
-Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
- 
-Modifie les valeurs du bloc ``|| pins: écrire sur la broche  ||``.
-
-Écrire sur la broche "P0" la valeur "1". La valeur "1" permet au courant de passer dans le circuit.
-
+Remplace la valeur sur la broche "P0" par "0".
  
 ```blocks 
 
-basic.forever(function () {
-    if (input.lightLevel() < 40) {
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-    	
-    }
+input.onButtonPressed(Button.B, function () {
+    pins.digitalWritePin(DigitalPin.P0, 0)
 })
 
 ``` 
+## @showdialog 
 
-## Étape 6 
- 
-Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
- 
-Modifie les valeurs du bloc ``|| pins: écrire sur la broche  ||``.
+Branche une pince alligator au port "P0" du micro:bit.
 
-Écrire sur la broche "P0" la valeur "0". La valeur "0" empêche le courant de passer dans le circuit.
+La couleur n'a pas d'importance!
 
- 
-```blocks 
-
-basic.forever(function () {
-    if (input.lightLevel() < 40) {
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-        pins.digitalWritePin(DigitalPin.P0, 0)
-    }
-})
-
-``` 
-
-## Étape 7 
- 
-Crée une ``|| variables: LED  ||`` et donne lui le nom ``|| variables: LED  ||``. 
-
-Ajoute le bloc ``|| variables: définir LED à "0" ||`` sous le bloc ``|| basic: toujours  ||``. 
-
-```blocks
-
-let LED = 0
-basic.forever(function () {
-    LED = 0
-    if (input.lightLevel() < 40) {
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-        pins.digitalWritePin(DigitalPin.P0, 0)
-    }
-})
-
-```
-
-## Étape 8
- 
-Ajoute le bloc ``|| input: niveau de luminosité  ||`` dans le bloc ``|| variables: définir "LED" à "0"  ||``.
-
-```blocks 
-
-let LED = 0
-basic.forever(function () {
-    LED = input.lightLevel()
-    if (input.lightLevel() < 40) {
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-        pins.digitalWritePin(DigitalPin.P0, 0)
-    }
-})
-
-``` 
-
-## Étape 9
- 
-Ajoute le bloc ``|| variables: LED  ||`` dans le bloc ``|| basic: afficher nombre  ||`` sous la condition "si".
-
-```blocks 
-
-let LED = 0
-basic.forever(function () {
-    LED = input.lightLevel()
-    if (input.lightLevel() < 40) {
-        basic.showNumber(Luminosité)
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-        pins.digitalWritePin(DigitalPin.P0, 0)
-    }
-})
-
-``` 
-
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_1.jpg?raw=true) 
 
 ## @showdialog 
 
-Félicitations! Tu as terminé de programmer un éclairage de sécurité.
+Relis la même pince alligator à une lumière LED à la broche positive. Il s'agit de la plus longue.
 
-Pour tester la séquence de programmation, télécharge le programme dans le micro:bit.
+La couleur n'a pas d'importance!
 
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_2.jpg?raw=true) 
+
+## @showdialog 
+
+Branche une autre pince alligator dans le port "GND" du micro:bit. 
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_3.jpg?raw=true) 
+
+## @showdialog 
+
+Relis la même pince alligator de la lumière LED à la broche négative. Il s'agit de la plus petite.
+
+Attention, les deux broches ne doivent pas se toucher!
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_4.jpg?raw=true) 
+
+## @showdialog 
+
+Félicitations! Tu as terminé ton premier circuit électrique et numérique.
+
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_5.jpg?raw=true) 
+
+Pour tester ton circuit électrique, télécharge la programmation dans le micro:bit.

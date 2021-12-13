@@ -1,64 +1,150 @@
 # Niveau 5
 
-# Un circuit électrique avec un servomoteur! 
+# Un circuit électrique et numérique
 
 ## @showdialog 
 
-Transforme ton micro:bit en un circuit électrique avec un servomoteur! 
+Programme un éclairage de sécurité.
  
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_b_7.jpg?raw=true) 
+![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_f_1.jpg?raw=true) 
 
 ## Étape 1 
 
-Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||``. 
+Supprime le bloc ``|| basic:au démarrage ||``. 
 
 ## Étape 2 
 
- Ajoute le bloc ``|| pins: régler position servo  ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
- 
-Modifie la valeur du bloc ``|| pins: régler position servo  ||``.
-
-Écris à "45" degrés.
+ Ajoute le bloc ``|| logic: "si alors sinon"  ||`` dans le bloc ``|| basic:toujours ||``. 
  
 
 ```blocks 
 
-input.onButtonPressed(Button.A, function () {
-    pins.servoWritePin(AnalogPin.P0, 45)
+basic.forever(function () {
+    if (true) {
+    	
+    } else {
+    	
+    }
 })
 
 ``` 
 
+
 ## Étape 3 
  
-Ajoute le bloc ``|| pins: régler position servo  ||`` dans le bloc ``||input:lorsque le bouton B est pressé||``. 
+Ajoute le bloc ``|| input: niveau d'intensité lumineuse  ||`` dans le bloc ``|| logic:"0 < 0"||``. 
  
-Modifie la valeur du bloc ``|| pins: régler position servo  ||``.
+Modifie la valeur de droite ``|| logic:"0 < 0"||`` à 40.
 
-Écris à "90" degrés.
+Autrement dit, "si l'intensité de lumière est inférieure à "40"... un événement doit se produire.
  
-
 ```blocks 
 
-input.onButtonPressed(Button.B, function () {
-    pins.servoWritePin(AnalogPin.P0, 90)
+basic.forever(function () {
+    if (input.lightLevel() < 40) {
+    	
+    } else {
+    	
+    }
 })
 
 ``` 
 
 ## Étape 4 
  
-Ajoute le bloc ``|| pins: régler position servo  ||`` dans le bloc ``||input:lorsque le bouton A+B est pressé||``. 
+Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
  
-Modifie le valeur du bloc ``|| pins: régler position servo  ||``.
+Modifie les valeurs du bloc ``|| pins: écrire sur la broche  ||``.
 
-Écris à "0" degrés.
+Écrire sur la broche "P0" la valeur "1". La valeur "1" permet au courant de passer dans le circuit.
+
  
+```blocks 
+
+basic.forever(function () {
+    if (input.lightLevel() < 40) {
+        pins.digitalWritePin(DigitalPin.P0, 1)
+    } else {
+    	
+    }
+})
+
+``` 
+
+## Étape 6 
+ 
+Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors sinon"  ||``. 
+ 
+Modifie les valeurs du bloc ``|| pins: écrire sur la broche  ||``.
+
+Écrire sur la broche "P0" la valeur "0". La valeur "0" empêche le courant de passer dans le circuit.
+
+ 
+```blocks 
+
+basic.forever(function () {
+    if (input.lightLevel() < 40) {
+        pins.digitalWritePin(DigitalPin.P0, 1)
+    } else {
+        pins.digitalWritePin(DigitalPin.P0, 0)
+    }
+})
+
+``` 
+
+## Étape 7 
+ 
+Crée une ``|| variables: LED  ||`` et donne lui le nom ``|| variables: LED  ||``. 
+
+Ajoute le bloc ``|| variables: définir LED à "0" ||`` sous le bloc ``|| basic: toujours  ||``. 
+
+```blocks
+
+let LED = 0
+basic.forever(function () {
+    LED = 0
+    if (input.lightLevel() < 40) {
+        pins.digitalWritePin(DigitalPin.P0, 1)
+    } else {
+        pins.digitalWritePin(DigitalPin.P0, 0)
+    }
+})
+
+```
+
+## Étape 8
+ 
+Ajoute le bloc ``|| input: niveau de luminosité  ||`` dans le bloc ``|| variables: définir "LED" à "0"  ||``.
 
 ```blocks 
 
-input.onButtonPressed(Button.AB, function () {
-    pins.servoWritePin(AnalogPin.P0, 0)
+let LED = 0
+basic.forever(function () {
+    LED = input.lightLevel()
+    if (input.lightLevel() < 40) {
+        pins.digitalWritePin(DigitalPin.P0, 1)
+    } else {
+        pins.digitalWritePin(DigitalPin.P0, 0)
+    }
+})
+
+``` 
+
+## Étape 9
+ 
+Ajoute le bloc ``|| variables: LED  ||`` dans le bloc ``|| basic: afficher nombre  ||`` sous la condition "si".
+
+```blocks 
+
+let LED = 0
+basic.forever(function () {
+    LED = input.lightLevel()
+    if (input.lightLevel() < 40) {
+        basic.showNumber(Luminosité)
+        pins.digitalWritePin(DigitalPin.P0, 1)
+    } else {
+        pins.digitalWritePin(DigitalPin.P0, 0)
+    }
 })
 
 ``` 
@@ -66,46 +152,7 @@ input.onButtonPressed(Button.AB, function () {
 
 ## @showdialog 
 
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_b_1.jpg?raw=true) 
+Félicitations! Tu as terminé de programmer un éclairage de sécurité.
 
-Branche une pince alligator dans le port "P0" du micro:bit.
+Pour tester la séquence de programmation, télécharge le programme dans le micro:bit.
 
-## @showdialog 
-
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_b_2.jpg?raw=true) 
-
-Branche une pince alligator dans le port "3V" du micro:bit.
-
-## @showdialog 
-
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_b_3.jpg?raw=true) 
-
-Branche une pince alligator dans le port "GND" du micro:bit.
-
-
-## @showdialog 
-
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_b_4.jpg?raw=true) 
-
-Relis la pince alligator branchée dans le port "P0" du micro:bit dans la branche jaune du servomoteur.
-
-
-## @showdialog 
-
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_b_5.jpg?raw=true) 
-
-Relis la pince alligator branchée dans le port "3V" du micro:bit dans la branche centrale du servomoteur.
-
-## @showdialog 
-
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_b_6.jpg?raw=true) 
-
-Relis la pince alligator branchée dans le port "GND" du micro:bit dans la dernière branche du servomoteur.
-
-## @showdialog 
-
-Félicitations! Tu as terminé les branchements et la programmation de ton  circuit électrique et numérique.
-
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_b_7.jpg?raw=true) 
-
-Teste maintenant ton circuit!
