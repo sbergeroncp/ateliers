@@ -104,8 +104,6 @@ Relis la pince alligator branchée dans le port "GND" du micro:bit dans la derni
 
 ## @showdialog 
 
-Félicitations! Tu as terminé les branchements et la programmation de ton  circuit électrique et numérique.
-
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_b_7.jpg?raw=true) 
+Félicitations! Tu as terminé le branchement et la programmation de ton  circuit électrique avec un servomoteur.
 
 Teste maintenant ton circuit!
