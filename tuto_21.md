@@ -2,6 +2,8 @@
 
 # Un circuit électrique et numérique! 
 
+## @showdialog 
+
 Transforme ton micro:bit en un circuit électrique et numérique! 
  
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_5.jpg?raw=true) 
