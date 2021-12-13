@@ -29,7 +29,8 @@
         "tuto_5_a.md",
         "tuto_5_b.md",
         "tuto_5_c.md",
-        "tuto_20.md"
+        "tuto_20.md",
+        "tuto_21.md"
     ],
     "testFiles": [
         "test.ts"
