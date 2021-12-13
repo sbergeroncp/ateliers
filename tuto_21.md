@@ -150,26 +150,6 @@ basic.forever(function () {
 ``` 
 
 
-## Étape 9
- 
-Ajoute le bloc ``|| variables: Luminosite  ||`` dans le bloc ``|| basic: afficher le texte  ||`` sous la condition "sinon".
-
-```blocks 
-
-let LED = 0
-basic.forever(function () {
-    LED = input.lightLevel()
-    if (input.lightLevel() < 40) {
-        basic.showNumber(Luminosité)
-        pins.digitalWritePin(DigitalPin.P0, 1)
-    } else {
-        basic.showNumber(Luminosité)
-        pins.digitalWritePin(DigitalPin.P0, 0)
-    }
-})
-
-``` 
-
 ## @showdialog 
 
 Félicitations! Tu as terminé de programmer un éclairage de sécurité.
