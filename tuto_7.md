@@ -1,3 +1,5 @@
+# Niveau 2
+
 ## @showdialog
 
 Affiche une image sur l'écran du micro:bit en fonction du niveau d'intensité lumineuse de la pièce.

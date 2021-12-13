@@ -1,3 +1,5 @@
+# Niveau 2
+
 ## @showdialog
 
 Affiche la température ambiante sur l'écran du micro:bit.

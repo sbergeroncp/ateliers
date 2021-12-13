@@ -1,3 +1,5 @@
+# Niveau 1
+
 ## @showdialog
 
 Fais apparaître tes initiales lorsque le micro:bit est activé.

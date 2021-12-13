@@ -1,3 +1,5 @@
+# Niveau 2
+
 ## @showdialog
 
 Roche, papier, ciseau... allumettes!
@@ -150,4 +152,4 @@ Télécharge le programme dans le micro:bit.
 
 Teste le programme avec une autre équipe!
 
-Es-tu capable de programmer d'ajouter une autre valeur ? La valeur 4 représente les ``||logic: allumettes||`` .
+Es-tu capable d'ajouter à la séquence de programmation une autre valeur ? La valeur 4 représente les ``||logic: allumettes||`` .

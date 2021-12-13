@@ -1,3 +1,5 @@
+# Niveau 1
+
 ## @showdialog
 
 Fais apparaître une image lorsqu'un bouton du micro:bit est pressé.

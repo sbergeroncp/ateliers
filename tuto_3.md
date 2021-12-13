@@ -1,3 +1,5 @@
+# Niveau 1
+
 ## @showdialog
 
 Fais apparaître une image lorsque le micro:bit est activé.
