@@ -35,9 +35,9 @@ basic.forever(function () {
 
 ## Étape 3 
 
-Remplace la valeur 0 du bloc ``|| logic: 0 > 0 ||`` (gauche) par le bloc ``|| input: accéléromètre (mg) x||``.
+Remplace la valeur 0 du bloc ``|| logic: 0 > 0 ||`` (gauche) par le bloc ``|| input: accélération (mg) x||``.
 
-Remplace la valeur 0 du bloc ``|| logic: 0 > 0 ||`` (droite) par le bloc ``|| input: accéléromètre (mg) x||``.
+Remplace la valeur 0 du bloc ``|| logic: 0 > 0 ||`` (droite) par le bloc ``|| input: accélération (mg) x||``.
 
 Remplace les valeurs "0" par "50".
 
@@ -88,7 +88,34 @@ basic.forever(function () {
 
 ```
 
-## Étape 5 
+## Étape 5
+
+Ajoute le bloc ``|| loops: répéter 2 fois ||`` dans le bloc ``||basic:si alors||``.
+
+Ajouter les autres blocs dans la boucle.
+
+Regarde l'indice pour connaître les valeurs à changer.
+
+```blocks 
+
+basic.forever(function () {
+    if (input.acceleration(Dimension.X) > 50 || input.acceleration(Dimension.X) < 50) {
+        for (let index = 0; index < 2; index++) {
+            basic.showIcon(IconNames.Square)
+            pins.digitalWritePin(DigitalPin.P0, 1)
+            basic.pause(200)
+            basic.showIcon(IconNames.SmallSquare)
+            pins.digitalWritePin(DigitalPin.P0, 0)
+            basic.pause(200)
+        }
+    } else {
+    	
+    }
+})
+
+```
+
+## Étape 6 
 
 Ajoute le bloc ``|| pins: écrire sur la broche ||`` sous le bloc ``|| logic: "sinon" ||``.
 
@@ -101,17 +128,20 @@ Regarde l'indice pour connaître les valeurs à changer.
 
 basic.forever(function () {
     if (input.acceleration(Dimension.X) > 50 || input.acceleration(Dimension.X) < 50) {
-        basic.showIcon(IconNames.Square)
-        pins.digitalWritePin(DigitalPin.P0, 1)
-        basic.pause(200)
-        basic.showIcon(IconNames.SmallSquare)
-        pins.digitalWritePin(DigitalPin.P0, 0)
-        basic.pause(200)
+        for (let index = 0; index < 2; index++) {
+            basic.showIcon(IconNames.Square)
+            pins.digitalWritePin(DigitalPin.P0, 1)
+            basic.pause(200)
+            basic.showIcon(IconNames.SmallSquare)
+            pins.digitalWritePin(DigitalPin.P0, 0)
+            basic.pause(200)
+        }
     } else {
         pins.digitalWritePin(DigitalPin.P0, 0)
         basic.clearScreen()
     }
 })
+
 
 ```
 
