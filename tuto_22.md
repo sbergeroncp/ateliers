@@ -147,7 +147,7 @@ basic.forever(function () {
 
 ## Étape 9
  
-Ajoute le bloc ``|| variables: LED  ||`` dans le bloc ``|| basic: afficher nombre  ||`` sous la condition "si".
+Ajoute le bloc ``|| variables: LED  ||`` dans le bloc ``|| basic: afficher nombre  ||`` sous la condition ``|| logic: "si"  ||``.
 
 ```blocks 
 
