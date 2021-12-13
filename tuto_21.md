@@ -4,7 +4,7 @@
 
 ## @showdialog 
 
-Transforme ton micro:bit en un circuit électrique et numérique! 
+Transforme ton micro:bit en un circuit électrique avec une lumière LED.
  
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_5.jpg?raw=true) 
 
@@ -14,9 +14,9 @@ Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||``.
 
 ## Étape 2 
 
- Ajoute le bloc ``|| pins: Écrire sur la broche  ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
+ Ajoute le bloc ``|| pins: écrire sur la broche  ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
  
-Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
+Modifie les valeurs du bloc ``|| pins: écrire sur la broche  ||``.
 
 Remplace la valeur sur la broche "P0" par "1".
  
@@ -31,9 +31,9 @@ input.onButtonPressed(Button.A, function () {
 
 ## Étape 3 
  
-Ajoute le bloc ``|| pins: Écrire sur la broche  ||`` dans le bloc ``||input:lorsque le bouton B est pressé||``. 
+Ajoute le bloc ``|| pins: écrire sur la broche  ||`` dans le bloc ``||input:lorsque le bouton B est pressé||``. 
  
-Modifie les valeurs du bloc ``|| pins: Écrire sur la broche  ||``.
+Modifie les valeurs du bloc ``|| pins: écrire sur la broche  ||``.
 
 Remplace la valeur sur la broche "P0" par "0".
  
@@ -76,8 +76,6 @@ Attention, les deux broches ne doivent pas se toucher!
 
 ## @showdialog 
 
-Félicitations! Tu as terminé ton premier circuit électrique et numérique.
-
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_5.jpg?raw=true) 
+Félicitations! Tu as terminé ton premier circuit électrique avec une lumière LED.
 
 Pour tester ton circuit électrique, télécharge la programmation dans le micro:bit.
