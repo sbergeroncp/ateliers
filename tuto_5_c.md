@@ -29,7 +29,9 @@ basic.forever(function () {
 
 ## Étape 3
 
-Ajoute le bloc ``||logic: "si alors sinon"||`` dans le bloc ``||radio: quand une donnée est reçue par radio||``.
+Ajoute le bloc ``||logic: "si vrai alors sinon"||`` dans le bloc ``||radio: quand une donnée est reçue par radio||``.
+
+Regarde attentivement l'indice!
 
 ```blocks
 
@@ -46,7 +48,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 
 ## Étape 4
 
-Remplace la valeur "vrai" par le bloc ``||logic: "0 < 0)"||`` dans le bloc ``||logic:"si alors sinon" ||``.
+Remplace la valeur "vrai" par le bloc ``||logic: "0 < 0"||`` dans le bloc ``||logic:"si alors sinon" ||``.
 
 ```blocks
 
