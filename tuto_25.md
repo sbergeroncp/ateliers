@@ -16,7 +16,7 @@ Ajoute le bloc ``|| logic: "si alors sinon" ||`` sous le bloc ``||basic:toujours
 
 Ajoute le bloc ``|| logic: ou ||`` dans le bloc ``|| logic: "si alors sinon" ||``. 
 
-Ajoute les blocs ``|| logic: 0 > 0 ||`` et ``|| logic: 0 < 0 ||`` dans le bloc ``|| logic: ou ||``
+Ajoute les blocs ``|| logic: 0 > 0 ||`` et ``|| logic: 0 >  0 ||`` dans le bloc ``|| logic: ou ||``
  
 
 Regarde l'indice pour connaître les valeurs à changer.
@@ -24,7 +24,7 @@ Regarde l'indice pour connaître les valeurs à changer.
 ```blocks 
 
 basic.forever(function () {
-    if (0 > 0 || 0 < 0) {
+    if (0 > 0 || 0 > 0) {
     	
     } else {
     	
@@ -37,7 +37,7 @@ basic.forever(function () {
 
 Remplace la valeur 0 du bloc ``|| logic: 0 > 0 ||`` (gauche) par le bloc ``|| input: accélération (mg) x||``.
 
-Remplace la valeur 0 du bloc ``|| logic: 0 > 0 ||`` (droite) par le bloc ``|| input: accélération (mg) x||``.
+Remplace la valeur 0 du bloc ``|| logic: 0 > 0 ||`` (droite) par le bloc ``|| input: accélération (mg) y||``.
 
 Remplace les valeurs "0" par "50".
 
@@ -46,7 +46,7 @@ Regarde l'indice pour connaître les valeurs à changer.
 ```blocks 
 
 basic.forever(function () {
-    if (input.acceleration(Dimension.X) > 50 || input.acceleration(Dimension.X) < 50) {
+    if (input.acceleration(Dimension.X) > 50 || input.acceleration(Dimension.Y) > 50) {
     	
     } else {
     	
@@ -74,7 +74,7 @@ Regarde l'indice pour connaître les valeurs à changer.
 ```blocks 
 
 basic.forever(function () {
-    if (input.acceleration(Dimension.X) > 50 || input.acceleration(Dimension.X) < 50) {
+    if (input.acceleration(Dimension.X) > 50 || input.acceleration(Dimension.Y) > 50) {
         basic.showIcon(IconNames.Square)
         pins.digitalWritePin(DigitalPin.P0, 1)
         basic.pause(200)
@@ -99,7 +99,7 @@ Regarde l'indice pour connaître les valeurs à changer.
 ```blocks 
 
 basic.forever(function () {
-    if (input.acceleration(Dimension.X) > 50 || input.acceleration(Dimension.X) < 50) {
+    if (input.acceleration(Dimension.X) > 50 || input.acceleration(Dimension.Y) > 50) {
         for (let index = 0; index < 2; index++) {
             basic.showIcon(IconNames.Square)
             pins.digitalWritePin(DigitalPin.P0, 1)
@@ -127,7 +127,7 @@ Regarde l'indice pour connaître les valeurs à changer.
 ```blocks 
 
 basic.forever(function () {
-    if (input.acceleration(Dimension.X) > 50 || input.acceleration(Dimension.X) < 50) {
+    if (input.acceleration(Dimension.X) > 50 || input.acceleration(Dimension.Y) > 50) {
         for (let index = 0; index < 2; index++) {
             basic.showIcon(IconNames.Square)
             pins.digitalWritePin(DigitalPin.P0, 1)
