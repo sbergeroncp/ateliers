@@ -25,7 +25,7 @@ basic.forever(function () {
 
 ## Étape 3
 
-Remplace la valeur "0" du bloc ``||variables: définir Temperature à "0"||`` par le bloc ``||input: niveau d'intensité lumineuse||``. 
+Remplace la valeur "0" du bloc ``||variables: définir luminosité à "0"||`` par le bloc ``||input: niveau d'intensité lumineuse||``. 
 
 
 ```blocks
