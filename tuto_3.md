@@ -12,7 +12,7 @@ Supprime le bloc ``||basic:au démarrage||``.
 
 Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||basic: toujours||``.
 
-Dessine une image dans le bloc ``|| basic: montrer l'icône ||``.
+Dessine une image dans le bloc ``|| basic: montrer LEDs ||``.
 
 ```blocks
 

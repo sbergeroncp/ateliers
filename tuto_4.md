@@ -12,7 +12,7 @@ Supprime les blocs ``||basic: au démarrage||`` et ``||basic: toujours||``.
 
 Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input: lorsque le bouton A est pressé||``.
 
-Dessine un visage heureux dans le bloc ``|| basic: montrer l'icône ||``.
+Dessine un visage heureux dans le bloc ``|| basic: montrer LEDs ||``.
 
 ```blocks
 
@@ -32,7 +32,7 @@ input.onButtonPressed(Button.A, function () {
 
 Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input: lorsque le bouton B est pressé||``.
 
-Dessine un visage malheureux dans le bloc ``|| basic: montrer l'icône ||``.
+Dessine un visage malheureux dans le bloc ``|| basic: montrer LEDs ||``.
 
 ```blocks
 
@@ -52,7 +52,7 @@ input.onButtonPressed(Button.B, function () {
 
 Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input: lorsque le bouton A+B est pressé||``.
 
-Dessine un visage neutre dans le bloc ``|| basic: montrer l'icône ||``.
+Dessine un visage neutre dans le bloc ``|| basic: montrer LEDs ||``.
 
 ```blocks
 
