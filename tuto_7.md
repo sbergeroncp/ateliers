@@ -97,7 +97,7 @@ basic.forever(function () {
 
 ## Étape 7
 
-Ajoute le bloc ``|| basic: Montrer LEDs ||`` sous le bloc ``|| variables: si ||``.
+Ajoute le bloc ``|| basic: Montrer LEDs ||`` sous le bloc ``|| logic: si ||``.
 
 Remplis le LEDs. Active toutes les LEDs du micro:bit.
 
