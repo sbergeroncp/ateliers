@@ -44,11 +44,12 @@ radio.setGroup(1)
 
 Ajoute le bloc ``|| basic: afficher texte ||`` dans le bloc ``|| radio: quand une donnée est reçue par radio ||``.
 
+Assure-toi de prendre le nom ``|| variables: receivedString ||``.
 
 ```blocks
 
 input.onButtonPressed(Button.AB, function () {
-    radio.sendString("")
+    radio.sendString("Salut!")
 })
 radio.onReceivedString(function (receivedString) {
     basic.showString("Hello!")
@@ -66,7 +67,7 @@ Regarde attentivement l'indice!
 ```blocks
 
 input.onButtonPressed(Button.AB, function () {
-    radio.sendString("")
+    radio.sendString("Salut!")
 })
 radio.onReceivedString(function (receivedString) {
     basic.showString(receivedString)

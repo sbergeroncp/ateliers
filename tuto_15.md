@@ -6,13 +6,13 @@ Le décompte!
 
 ## Étape 1
 
-Supprime le bloc ``||basic:toujours||``.
+Supprim les bloc ``||basic:toujours||``.
 
 ## Étape 2
 
 Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Temps||``.
 
-Ajoute le bloc ``||variables: définir Temps à "4"||`` dans le bloc ``||input: lorsque secouer||``.
+Ajoute le bloc ``||variables: définir Temps à "4"||`` dans le bloc ``||basic: au démarrage||``.
 
 ```blocks
 

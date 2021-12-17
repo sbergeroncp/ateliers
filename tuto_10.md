@@ -96,7 +96,7 @@ Ajoute le bloc ``||basic: montrer l'icône||`` sous le bloc ``||logic: "si Main 
 
 Ajoute le bloc ``||basic: pause (ms) 2000||`` sous le bloc ``||basic: montrer l'icône||``.
 
-Ajoute le bloc ``||basic: effacer l'écran||`` sous le bloc ``||basic: pause (ms) 1000||``.
+Ajoute le bloc ``||basic: effacer l'écran||`` sous le bloc ``||basic: pause (ms) 2000||``.
 
 ```blocks
 

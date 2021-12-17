@@ -6,7 +6,7 @@ Compose une mélodie !
 
 ## Étape 1
 
-Supprime le bloc ``||basic:au démarrage||``.
+Supprime le bloc ``||basic:toujours||``.
 
 ## Étape 2
 

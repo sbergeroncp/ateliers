@@ -125,7 +125,7 @@ basic.forever(function () {
 
 ## Étape 8
 
-Ajoute le bloc ``|| basic: montrer l'icône ||`` sous le bloc ``|| logic: sinon ||``.
+Ajoute le bloc ``|| basic: montrer LEDs ||`` sous le bloc ``|| logic: sinon ||``.
 
 Active seulement la LED centrale du micro:bit.
 
