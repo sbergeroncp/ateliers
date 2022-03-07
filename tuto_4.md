@@ -12,7 +12,7 @@ Supprime les blocs ``||basic: au démarrage||`` et ``||basic: toujours||``.
 
 Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input: lorsque le bouton A est pressé||``.
 
-Dessine un visage heureux dans le bloc ``|| basic: montrer LEDs ||``.
+Dessine une épée de Minecraft dans le bloc ``|| basic: montrer LEDs ||``.
 
 ```blocks
 
@@ -30,9 +30,11 @@ input.onButtonPressed(Button.A, function () {
 
 ## Étape 3
 
+Conserve ta séquence de programmation. Ajoute une nouvelle séquence.
+
 Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input: lorsque le bouton B est pressé||``.
 
-Dessine un visage malheureux dans le bloc ``|| basic: montrer LEDs ||``.
+Dessine une armure de Minecraft dans le bloc ``|| basic: montrer LEDs ||``.
 
 ```blocks
 
@@ -50,9 +52,11 @@ input.onButtonPressed(Button.B, function () {
 
 ## Étape 4
 
+Conserve tes séquences de programmation. Ajoute une nouvelle séquence.
+
 Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input: lorsque le bouton A+B est pressé||``.
 
-Dessine un visage neutre dans le bloc ``|| basic: montrer LEDs ||``.
+Dessine objet de Minecraft dans le bloc ``|| basic: montrer LEDs ||``.
 
 ```blocks
 
