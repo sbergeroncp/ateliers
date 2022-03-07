@@ -6,11 +6,11 @@ Fais apparaître tes initiales lorsque le micro:bit est activé.
 
 ## Étape 1
 
-Supprime le bloc ``||basic:toujours||``.
+Supprime le bloc ``||basic:au démarrage||``.
 
 ## Étape 2
 
-Ajoute le bloc ``|| basic: afficher texte ||`` dans le bloc ``||basic: au démarrage||``.
+Ajoute le bloc ``|| basic: afficher texte ||`` dans le bloc ``||basic: toujours||``.
 
 Efface le mot "Hello" du bloc ``|| basic: afficher texte ||``.
 
