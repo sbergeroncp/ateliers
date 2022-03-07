@@ -14,7 +14,7 @@ Ajoute le bloc ``|| basic: afficher texte ||`` dans le bloc ``||basic: toujours|
 
 Efface le mot "Hello" du bloc ``|| basic: afficher texte ||``.
 
-Écris tes initiales. (ex. : Sébastien Bergeron = SB) dans bloc ``|| basic: afficher texte ||``.
+Écris tes initiales (ex. : Sébastien Bergeron = SB) dans bloc ``|| basic: afficher texte ||``.
 
 ```blocks
 
