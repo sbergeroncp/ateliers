@@ -18,7 +18,9 @@ Efface le mot "Hello" du bloc ``|| basic: afficher texte ||``.
 
 ```blocks
 
-basic.showString("Hello!")
+basic.forever(function () {
+    basic.showString("Hello!")
+})
 
 ```
 
