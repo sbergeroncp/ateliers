@@ -1,4 +1,4 @@
-# Horoscope
+# Turoriel - Aléatoire
 
 ## @showdialog
 
