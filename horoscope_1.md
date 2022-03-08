@@ -12,64 +12,25 @@ Supprime le bloc ``||basic:toujours||``.
 
 Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Mois||``. 
 
-Ajoute le bloc ``||variables: définir Mois à "0"||`` dans le bloc ``||basic: au démarrage||``.
+Ajoute le bloc ``||arrays: liste de textes à tableau a b c||`` dans le bloc ``||basic: au démarrage||``.
 
 ```blocks
 
-let Mois = 0
+let Mois = ["a", "b", "c"]
 
 ```
 
 ## Étape 3
 
-
-Remplace la valeur ``||variables: 0||``du bloc  ``||variables: définir Mois à "0"||`` par le bloc ``||arrays: tableau vide +||``.
-
+Remplace las cases du bloc ``||arrays: liste de textes à tableau a b c||`` par le nom des douze mois.
 
 ```blocks
 
-let Mois: number[] = []
+let Mois = ["Janvier", "Février", "Mars"]
 
 ```
 
 ## Étape 4
-
-
-Remplace la case vide du bloc ``||arrays: tableau vide +||`` par le bloc ``||text: texte||``.
-
-```blocks
-
-let Mois = ["Janvier"]
-
-```
-
-## Étape 5
-
-
-Ajoute les cases pour les autres mois de l'année à l'aide des blocs ``||text: texte||``.
-
-N'écris pas les accents (ex. : Février = Fevrier).
-
-```blocks
-
-let Mois = [
-"Janvier",
-"Fevrier",
-"Mars",
-"Avril",
-"Mai",
-"Juin",
-"Juillet",
-"Aout",
-"Septembre",
-"Octobre",
-"Novembre",
-"Decembre"
-]
-
-```
-
-## Étape 6
 
 Conserve ta séquence de programmation et ajoute celle-ci.
 
@@ -94,6 +55,8 @@ Remplace le mot ``|| basic: Hello ||`` du bloc ``|| basic: afficher texte ||`` p
 input.onButtonPressed(Button.A, function () {
     basic.showString("" + (Mois._pickRandom()))
 })
+let Mois: string[] = []
+Mois = ["Janvier", "Février", "Mars"]
 
 ```
 
