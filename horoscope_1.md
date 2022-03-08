@@ -46,7 +46,7 @@ let Mois = ["Janvier"]
 ## Étape 5
 
 
-Ajoute les cases pour les autres mois de l'année. 
+Ajoute les cases pour les autres mois de l'année à l'aide des blocs ``||text: texte||``
 
 N'écris pas les accents (ex. : Février = Fevrier).
 
