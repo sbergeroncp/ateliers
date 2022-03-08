@@ -45,7 +45,7 @@ input.onButtonPressed(Button.A, function () {
 
 ```
 
-# Étape 7
+# Étape 5
 
 Remplace le mot ``|| basic: Hello ||`` du bloc ``|| basic: afficher texte ||`` par le bloc ``||arrays: obtenir une valeur aléatoire||``.
 
@@ -60,7 +60,7 @@ Mois = ["Janvier", "Février", "Mars"]
 
 ```
 
-## Étape 8
+## Étape 6
 
 Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Qualite||``. 
 
@@ -74,7 +74,7 @@ let Qualite = 0
 
 ```
 
-## Étape 9
+## Étape 7
 
 
 Remplace la valeur ``||variables: 0 ||`` du bloc ``||variables: définir Qualite à "0"||`` par le bloc ``||arrays: tableau vide +||``.
@@ -86,7 +86,7 @@ let Qualite: number[] = []
 
 ```
 
-## Étape 10
+## Étape 8
 
 
 Remplace la case vide du bloc ``||arrays: tableau vide +||`` par le bloc ``||text: texte||``.
@@ -97,7 +97,7 @@ let Mois = ["texte"]
 
 ```
 
-## Étape 11
+## Étape 9
 
 
 Ajoute les cases pour 12 qualités en tout à l'aide des blocs ``||text: texte||``.
@@ -123,7 +123,7 @@ let Mois = [
 
 ```
 
-## Étape 12
+## Étape 10
 
 Conserve ta séquence de programmation et ajoute celle-ci.
 
@@ -138,7 +138,7 @@ input.onButtonPressed(Button.B, function () {
 
 ```
 
-# Étape 13
+# Étape 11
 
 Remplace le mot ``|| basic: Hello||`` du bloc ``|| basic: afficher texte ||`` par le bloc ``||arrays: obtenir une valeur aléatoire||``.
 
@@ -151,7 +151,7 @@ input.onButtonPressed(Button.B, function () {
 
 ```
 
-# Étape 14 
+# Étape 12 
 
 Ajoute le bloc ``|| basic: montrer le nombre ||`` dans le bloc ``||input: lorsque secouer||``.
 
@@ -163,7 +163,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ```
 
-# Étape 15 
+# Étape 13 
 
 Remplace la valeur ``|| basic: 0 ||`` du bloc ``|| basic: montrer le nombre ||`` par le bloc ``|| math: choisir au hasard de 0 à 10 ||``.
 
