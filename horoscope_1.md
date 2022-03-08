@@ -12,7 +12,7 @@ Supprime le bloc ``||basic:toujours||``.
 
 Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Mois||``. 
 
-Ajoute le bloc ``||arrays: liste de textes à tableau a b c||`` dans le bloc ``||basic: au démarrage||``.
+Ajoute le bloc ``||variables: définir Mois à||`` ``||arrays: liste de textes à tableau a b c||`` dans le bloc ``||basic: au démarrage||``.
 
 ```blocks
 
@@ -22,7 +22,7 @@ let Mois = ["a", "b", "c"]
 
 ## Étape 3
 
-Remplace las cases du bloc ``||arrays: liste de textes à tableau a b c||`` par le nom des douze mois.
+Remplace les cases du bloc ``||arrays: liste de textes à tableau a b c||`` par le nom des douze mois.
 
 ```blocks
 
@@ -62,70 +62,31 @@ Mois = ["Janvier", "Février", "Mars"]
 
 ## Étape 6
 
-Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Qualite||``. 
+Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Qualités||``. 
 
-N'écris pas les accents sur les mots.
-
-Ajoute le bloc ``||variables: définir Qualite à "0"||`` dans le bloc ``||basic: au démarrage||``.
+Ajoute le bloc ``||variables: définir Qualités à||`` ``||arrays: liste de textes à tableau a b c||`` dans le bloc ``||basic: au démarrage||``.
 
 ```blocks
 
-let Qualite = 0
+let Qualités = ["a", "b", "c"]
 
 ```
 
 ## Étape 7
 
+Remplace las cases du bloc ``||arrays: liste de textes à tableau a b c||`` par le nom des douze qualités.
 
-Remplace la valeur ``||variables: 0 ||`` du bloc ``||variables: définir Qualite à "0"||`` par le bloc ``||arrays: tableau vide +||``.
-
+Regarde l'indice.
 
 ```blocks
 
-let Qualite: number[] = []
+let Qualités = ["Aimable", "Calme", "Compétent", "Curieux", "Original", "Sérieux", "Réfléchi", "Responsable", "Optimiste", "Créatif", "Innovateur", "Sociable"]
 
 ```
 
 ## Étape 8
 
-
-Remplace la case vide du bloc ``||arrays: tableau vide +||`` par le bloc ``||text: texte||``.
-
-```blocks
-
-let Mois = ["texte"]
-
-```
-
-## Étape 9
-
-
-Ajoute les cases pour 12 qualités en tout à l'aide des blocs ``||text: texte||``.
-
-N'écris pas les accents sur les mots.
-
-```blocks
-
-let Mois = [
-"Aimable",
-"Calme",
-"Competent",
-"Curieux",
-"Original",
-"Serieux",
-"Reflechi",
-"Responsable",
-"Optimiste",
-"Creatif",
-"Innovateur",
-"Sociable"
-]
-
-```
-
-## Étape 10
-
-Conserve ta séquence de programmation et ajoute celle-ci.
+Conserve la séquence de programmation et ajoute celle-ci.
 
 Ajoute le bloc ``|| basic: afficher texte ||`` dans le bloc ``||input: lorsque le bouton B est pressé||``.
 
@@ -138,20 +99,24 @@ input.onButtonPressed(Button.B, function () {
 
 ```
 
-# Étape 11
+# Étape 9
 
-Remplace le mot ``|| basic: Hello||`` du bloc ``|| basic: afficher texte ||`` par le bloc ``||arrays: obtenir une valeur aléatoire||``.
+Remplace le mot ``|| basic: Hello ||`` du bloc ``|| basic: afficher texte ||`` par le bloc ``||arrays: obtenir une valeur aléatoire||``.
 
 
 ```blocks
 
 input.onButtonPressed(Button.B, function () {
-    basic.showString("" + (Qualite._pickRandom()))
+    basic.showString("" + (Qualites._pickRandom()))
 })
+let Qualites: string[] = []
+Qualités = ["Aimable", "Calme", "Compétent", "Curieux", "Original", "Sérieux", "Réfléchi", "Responsable", "Optimiste", "Créatif", "Innovateur", "Sociable"]
 
 ```
 
-# Étape 12 
+# Étape 10
+
+Conserve les séquences de programmation et ajoute celle-ci.
 
 Ajoute le bloc ``|| basic: montrer le nombre ||`` dans le bloc ``||input: lorsque secouer||``.
 
@@ -163,7 +128,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ```
 
-# Étape 13 
+# Étape 11
 
 Remplace la valeur ``|| basic: 0 ||`` du bloc ``|| basic: montrer le nombre ||`` par le bloc ``|| math: choisir au hasard de 0 à 10 ||``.
 
