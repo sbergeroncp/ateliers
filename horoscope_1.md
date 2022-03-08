@@ -86,7 +86,7 @@ input.onButtonPressed(Button.A, function () {
 
 # Étape 7
 
-Remplace "Hello" du bloc ``|| basic: afficher texte ||`` par le bloc ``||arrays: obtenir une valeur aléatoire||``.
+Remplace le mot "Hello" du bloc ``|| basic: afficher texte ||`` par le bloc ``||arrays: obtenir une valeur aléatoire||``.
 
 
 ```blocks
