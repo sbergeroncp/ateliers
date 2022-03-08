@@ -38,7 +38,8 @@
         "_locales/fr/tuto_4.md",
         "horoscope_1.md",
         "_locales/fr-FR/horoscope_1.md",
-        "tutorial-info-cache.json"
+        "tutorial-info-cache.json",
+        "horos.md"
     ],
     "testFiles": [
         "test.ts"
