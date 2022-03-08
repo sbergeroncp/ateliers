@@ -32,7 +32,7 @@ let Mois = ["Janvier", "Février", "Mars"]
 
 ## Étape 4
 
-Conserve ta séquence de programmation et ajoute celle-ci.
+Conserve la séquence de programmation et ajoute celle-ci.
 
 Ajoute le bloc ``|| basic: afficher texte ||`` dans le bloc ``||input: lorsque le bouton A est pressé||``.
 
