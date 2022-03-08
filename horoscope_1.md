@@ -45,7 +45,7 @@ input.onButtonPressed(Button.A, function () {
 
 ```
 
-# Étape 5
+## Étape 5
 
 Remplace le mot ``|| basic: Hello ||`` du bloc ``|| basic: afficher texte ||`` par le bloc ``||arrays: obtenir une valeur aléatoire||``.
 
@@ -99,7 +99,7 @@ input.onButtonPressed(Button.B, function () {
 
 ```
 
-# Étape 9
+## Étape 9
 
 Remplace le mot ``|| basic: Hello ||`` du bloc ``|| basic: afficher texte ||`` par le bloc ``||arrays: obtenir une valeur aléatoire||``.
 
@@ -114,7 +114,7 @@ Qualités = ["Aimable", "Calme", "Compétent", "Curieux", "Original", "Sérieux"
 
 ```
 
-# Étape 10
+## Étape 10
 
 Conserve les séquences de programmation et ajoute celle-ci.
 
@@ -128,7 +128,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ```
 
-# Étape 11
+## Étape 11
 
 Remplace la valeur ``|| basic: 0 ||`` du bloc ``|| basic: montrer le nombre ||`` par le bloc ``|| math: choisir au hasard de 0 à 10 ||``.
 
