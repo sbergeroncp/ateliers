@@ -36,7 +36,8 @@
         "tuto_24.md",
         "tuto_25.md",
         "_locales/fr/tuto_4.md",
-        "horoscope_1.md"
+        "horoscope_1.md",
+        "_locales/fr-FR/horoscope_1.md"
     ],
     "testFiles": [
         "test.ts"
