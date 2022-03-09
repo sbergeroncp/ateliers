@@ -36,10 +36,9 @@
         "tuto_24.md",
         "tuto_25.md",
         "_locales/fr/tuto_4.md",
-        "_locales/fr-FR/horoscope_1.md",
         "tutorial-info-cache.json",
-        "_locales/fr/horos.md",
-        "random_1.md"
+        "random_1.md",
+        "_locales/fr-FR/random_1.md"
     ],
     "testFiles": [
         "test.ts"
