@@ -10,7 +10,7 @@ Supprime les blocs ``||basic:au démarrage||`` et ``||basic:toujours||``.
 
 ## Étape 2
 
-Ajoute le bloc ``||logic: "si vrai alors sinon"||`` dans le bloc ``||input: lorsque secouer||``.
+Ajoute le bloc ``||logic: si vrai alors sinon||`` dans le bloc ``||input: lorsque secouer||``.
 
 ```blocks
 
@@ -26,7 +26,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 3
 
-Remplace la valeur "vrai" dans le bloc ``||logic: "si vrai alors sinon"||`` par le bloc ``||math: choisir au hasard vrai ou faux||``.
+Remplace la valeur ``||logic: vrai ||`` dans le bloc ``||logic: si vrai alors sinon||`` par le bloc ``||math: choisir au hasard vrai ou faux||``.
 
 ```blocks
 
@@ -42,7 +42,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 4
 
-Ajoute le bloc ``||basic: montrer l'icone||`` dans le bloc ``||logic: si||``.
+Ajoute le bloc ``||basic: montrer l'icone||`` sous le bloc ``||logic: alors||``.
 
 ```blocks
 
@@ -58,7 +58,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 5
 
-Ajoute le bloc ``||basic: montrer l'icone||`` dans le bloc ``||logic: alors||``.
+Ajoute le bloc ``||basic: montrer l'icone||`` sous le bloc ``||logic: sinon||``.
 
 ```blocks
 
@@ -74,7 +74,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 6
 
-Ajoute le bloc ``||loops: répéter 2 fois||`` au-dessus du bloc ``||logic: "si alors sinon"||``.
+Ajoute le bloc ``||loops: répéter 2 fois||`` au-dessus du bloc ``||logic: si alors sinon||``.
 
 ```blocks
 
@@ -93,9 +93,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 7
 
-
-
-Ajoute les blocs ``||basic: montrer l'icone||`` dans le bloc ``||loops: "répéter deux fois"||``.
+Ajoute les blocs ``||basic: montrer l'icone||`` dans le bloc ``||loops: répéter deux fois||``.
 
 Regarde les icones dans l'indice.
 
