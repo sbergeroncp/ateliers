@@ -25,9 +25,9 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 3
 
-Remplace la valeur "0" dans le bloc ``||variables: définir Main||`` par le bloc ``||math: choisir au hasard de "0" à "10"||``.
+Remplace la valeur ``||variables: 0||`` dans le bloc ``||variables: définir Main à||`` par le bloc ``||math: choisir au hasard de "0" à "10"||``.
 
-Remplace les valeurs "0" et "10" dans le bloc ``||math: choisir au hasard de "0" à "10"||`` par les valeurs "1" et "3".
+Remplace les valeurs ``||math: 0||`` et ``||math: 10||`` dans le bloc ``||math: choisir au hasard de "0" à "10"||`` par les valeurs ``||math: 1||`` et ``||math: 3||``.
 
 ```blocks
 
@@ -40,7 +40,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 4
 
-Ajoute le bloc ``||logic: si vrai alors||`` sous le bloc ``||variables: définir Main||``.
+Ajoute le bloc ``||logic: si vrai alors||`` sous le bloc ``||variables: définir Main à||``.
 
 ```blocks
 
@@ -56,7 +56,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 5
 
-Ajoute le bloc ``||logic: "0" = "0"||`` dans le bloc ``||logic: si||``.
+Remplace le bloc ``||logic: vrai||`` par le bloc ``||logic: "0" = "0"||`` dans le bloc ``||logic: si alors||``.
 
 ```blocks
 
@@ -72,9 +72,9 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 6
 
-Remplace la valeur "0" de gauche du bloc ``||logic: "0" = "0"||`` par le bloc ``||variables:Main||``.
+Remplace la valeur ``||logic: 0||`` de gauche du bloc ``||logic: "0" = "0"||`` par le bloc ``||variables:Main||``.
 
-Remplace la valeur "0" de droite du bloc ``||logic: "0" = "0"||`` par la valeur "1".
+Remplace la valeur ``||logic: 0||`` de droite du bloc ``||logic: "0" = "0"||`` par la valeur ``||logic: 1||``.
 
 La valeur 1 représente les ``||logic: ciseaux||``.
 
@@ -92,7 +92,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 7
 
-Ajoute le bloc ``||basic: montrer l'icône||`` sous le bloc ``||logic: "si Main = 1"||``.
+Ajoute le bloc ``||basic: montrer l'icône||`` sous le bloc ``||logic: si Main = 1||``.
 
 Ajoute le bloc ``||basic: pause (ms) 2000||`` sous le bloc ``||basic: montrer l'icône||``.
 
@@ -115,7 +115,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 8
 
-Ajoute le bloc ``||basic: pause (ms) 1000||`` dans le bloc ``||input: lorsque secouer||``.
+Ajoute le bloc ``||basic: pause (ms) 1000||`` sous le bloc ``||input: lorsque secouer||``.
 
 ```blocks
 
@@ -152,4 +152,4 @@ Télécharge le programme dans le micro:bit.
 
 Teste le programme avec une autre équipe!
 
-Es-tu capable d'ajouter à la séquence de programmation une autre valeur ? La valeur 4 représente les ``||logic: allumettes||`` .
+Es-tu capable d'ajouter à la séquence de programmation une autre valeur ? La valeur 4 pourrait représenter les ``||logic: allumettes||`` .
