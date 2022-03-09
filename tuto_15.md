@@ -2,11 +2,11 @@
 
 ## @showdialog
 
-Le décompte!
+Le décompte musical!
 
 ## Étape 1
 
-Supprim les bloc ``||basic:toujours||``.
+Supprime le bloc ``||basic:toujours||``.
 
 ## Étape 2
 
