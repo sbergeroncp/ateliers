@@ -155,7 +155,7 @@ let LED = 0
 basic.forever(function () {
     LED = input.lightLevel()
     if (input.lightLevel() < 40) {
-        basic.showNumber(Luminosité)
+        basic.showNumber(LED)
         pins.digitalWritePin(DigitalPin.P0, 1)
     } else {
         pins.digitalWritePin(DigitalPin.P0, 0)
