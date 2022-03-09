@@ -27,7 +27,6 @@ basic.forever(function () {
 
 Remplace la valeur ``||variables: 0||`` du bloc ``||variables: définir Temperature à||`` par le bloc ``||input: température||``. 
 
-
 ```blocks
 
 let Temperature = 0
