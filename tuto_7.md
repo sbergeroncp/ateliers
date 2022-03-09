@@ -25,7 +25,7 @@ basic.forever(function () {
 
 ## Étape 3
 
-Remplace la valeur "0" du bloc ``||variables: définir luminosité à "0"||`` par le bloc ``||input: niveau d'intensité lumineuse||``. 
+Remplace la valeur ``||variables: 0||`` du bloc ``||variables: définir luminosité à "0"||`` par le bloc ``||input: niveau d'intensité lumineuse||``. 
 
 
 ```blocks
@@ -39,7 +39,7 @@ basic.forever(function () {
 
 ## Étape 4
 
-Ajoute le bloc ``|| logic: "si vrai alors sinon" ||`` sous le bloc ``|| variables: définir Lumiere ||``.
+Ajoute le bloc ``|| logic: si vrai alors sinon ||`` sous le bloc ``|| variables: définir Lumiere ||``.
 
 ```blocks
 
@@ -57,7 +57,7 @@ basic.forever(function () {
 
 ## Étape 5
 
-Remplace la valeur "vrai" du bloc ``|| logic: "si vrai alors sinon" ||`` par le bloc ``|| logic: 0 < 0||``. 
+Remplace la valeur ``|| logic: vrai ||`` du bloc ``|| logic: si vrai alors sinon ||`` par le bloc ``|| logic: 0 < 0||``. 
 
 ```blocks
 
@@ -75,11 +75,11 @@ basic.forever(function () {
 
 ## Étape 6
 
-Remplace la valeur "0" de gauche du bloc ``|| logic: 0 < 0||`` par le bloc ``|| variables: Lumiere||``. 
+Remplace la valeur ``|| logic: 0 ||`` à la gauche du bloc ``|| logic: 0 < 0||`` par le bloc ``|| variables: Lumiere||``. 
 
-Remplace la valeur "0" de droite du bloc ``|| logic: 0 < 0||`` par le bloc la valeur ``40``.
+Remplace la valeur ``|| logic: 0 ||`` à la droite du bloc ``|| logic: 0 < 0||`` par la valeur ``|| logic: 40 ||``.
 
-Lorsque le niveau d'intensité lumieuse est sous 40 dans une pièce, il fait généralement sombre!
+Lorsque le niveau d'intensité lumieuse est sous 40 dans une pièce, il fait généralement sombre! Passe ta main au-dessous du micro:bit au besoin.
 
 ```blocks
 
@@ -99,9 +99,9 @@ basic.forever(function () {
 
 Ajoute le bloc ``|| basic: Montrer LEDs ||`` sous le bloc ``|| logic: si ||``.
 
-Remplis le LEDs. Active toutes les LEDs du micro:bit.
+Remplis les 25 cases ppur activer toutes les LEDs du micro:bit.
 
-Lorsque le niveau d'intensité lumineuse sera sous 40, l'image choisie devrait s'afficher sur l'écran du micro:bit.
+Lorsque le niveau d'intensité lumineuse sera sous 40, l'image dessinée devrait s'afficher sur l'écran du micro:bit.
 
 ```blocks
 
@@ -110,11 +110,11 @@ basic.forever(function () {
     Lumiere = input.lightLevel()
     if (Lumiere < 40) {
         basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
             `)
     } else {
     	
@@ -129,7 +129,7 @@ Ajoute le bloc ``|| basic: montrer LEDs ||`` sous le bloc ``|| logic: sinon ||``
 
 Active seulement la LED centrale du micro:bit.
 
-Lorsque le niveau d'intensité lumineuse sera au-dessus de 40, l'icône choisie devrait s'afficher sur l'écran du micro:bit.
+Lorsque le niveau d'intensité lumineuse sera au-dessus de 40, l'image dessinée devrait s'afficher sur l'écran du micro:bit.
 
 ```blocks
 
@@ -138,17 +138,17 @@ basic.forever(function () {
     Lumiere = input.lightLevel()
     if (Lumiere < 40) {
         basic.showLeds(`
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
             `)
     } else {
         basic.showLeds(`
             . . . . .
             . . . . .
-            . . . . .
+            . . # . .
             . . . . .
             . . . . .
             `)
