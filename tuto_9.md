@@ -25,9 +25,9 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 3
 
-Remplace la valeur "0" dans le bloc ``||variables: définir nombre||`` par le bloc ``||math: choisir au hasard de "0" à "10"||``.
+Remplace la valeur ``||variables: 0||`` dans le bloc ``||variables: définir nombre||`` par le bloc ``||math: choisir au hasard de "0" à "10"||``.
 
-Remplace les valeurs "0" et "10" dans le bloc ``||math: choisir au hasard de "0" à "10"||`` par les valeurs "1" et "6".
+Remplace les valeurs ``||math: 0||`` et ``||math: 10||`` dans le bloc ``||math: choisir au hasard de "0" à "10"||`` par les valeurs ``||math: 1||`` et ``||math: 6||``.
 
 ```blocks
 
@@ -72,9 +72,9 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 6
 
-Remplace la valeur "0" du bloc ``||logic: "0" = "0"||`` par le bloc ``||variables:Nombre||``.
+Remplace la valeur ``||logic: 0||`` de gauche du bloc ``||logic: "0" = "0"||`` par le bloc ``||variables:Nombre||``.
 
-Remplace la valeur "0" du bloc ``||logic: "0" = "0"||`` par la valeur "1".
+Remplace la valeur ``||logic: 0||`` de droite du bloc ``||logic: "0" = "0"||`` par la valeur ``||logic: 1||``.
 
 ```blocks
 
@@ -90,7 +90,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 7
 
-Ajoute le bloc ``||basic: montrer LEDs||`` sous le bloc ``||logic: "si Nombre = 1"||``.
+Ajoute le bloc ``||basic: montrer LEDs||`` sous le bloc ``||logic: si Nombre = 1||``.
 
 Dessine le chiffre 1.
 
