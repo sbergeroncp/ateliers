@@ -14,7 +14,7 @@ Supprime le bloc  ``|| basic:toujours ||``.
 
 Ajoute le bloc ``|| pins: écrire sur la broche ||`` sous le bloc ``||basic:au démarrage||``.
 
-Ajoute le bloc ``|| basic: montrer l'icône ||`` dans le bloc ``|| pins: écrire sur la broche ||``. 
+Ajoute le bloc ``|| basic: montrer l'icône ||`` sous le bloc ``|| pins: écrire sur la broche ||``. 
  
 
 Regarde l'indice pour connaître les valeurs à changer.
