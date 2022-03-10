@@ -2,14 +2,6 @@
 
 # Un circuit électrique avec un servomoteur! 
 
-## @showdialog 
-
-Transforme ton micro:bit en un circuit électrique avec un servomoteur! 
- 
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_b_7.jpg?raw=true) 
-
-## Étape 1 
-
 Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||``. 
 
 ## Étape 2 
@@ -18,7 +10,7 @@ Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||``.
  
 Modifie la valeur du bloc ``|| pins: régler position servo  ||``.
 
-Écris à "45" degrés.
+Modifie la valeur du degré pour ``|| pins: 45 ||``.
  
 
 ```blocks 
@@ -35,7 +27,7 @@ Ajoute le bloc ``|| pins: régler position servo  ||`` dans le bloc ``||input:lo
  
 Modifie la valeur du bloc ``|| pins: régler position servo  ||``.
 
-Écris à "90" degrés.
+Modifie la valeur du degré pour ``|| pins: 90 ||``.
  
 
 ```blocks 
@@ -52,7 +44,7 @@ Ajoute le bloc ``|| pins: régler position servo  ||`` dans le bloc ``||input:lo
  
 Modifie le valeur du bloc ``|| pins: régler position servo  ||``.
 
-Écris à "0" degrés.
+Modifie la valeur du degré pour ``|| pins: 0 ||``.
  
 
 ```blocks 
