@@ -2,19 +2,13 @@
 
 # Un circuit électrique et numérique! 
 
-## @showdialog  
-
-Programme un éclairage de sécurité.
- 
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_f_1.jpg?raw=true) 
-
 ## Étape 1 
 
 Supprime le bloc ``|| basic:au démarrage ||``. 
 
 ## Étape 2 
 
-Ajoute le bloc ``|| logic: "si vrai alors sinon"  ||`` dans le bloc ``|| basic:toujours ||``. 
+Ajoute le bloc ``|| logic: si vrai alors sinon  ||`` dans le bloc ``|| basic:toujours ||``. 
  
 
 ```blocks 
@@ -31,7 +25,7 @@ basic.forever(function () {
 
 ## Étape 3 
 
-Remplace la valeur ``|| logic:"vrai"||`` par le bloc ``|| logic:"0 < 0"||`` dans le bloc ``|| logic: "si vrai alors sinon"||``. 
+Remplace la valeur ``|| logic:vrai||`` par le bloc ``|| logic:"0 < 0"||`` dans le bloc ``|| logic: si vrai alors sinon||``. 
  
 Regarde l'indice pour connaître les valeurs à changer.
 
@@ -48,11 +42,11 @@ basic.forever(function () {
 
 ## Étape 4 
  
-Modifie la valeur "0" (gauche) du bloc ``|| logic:"0 < 0"||`` par le bloc ``|| input: niveau d'intensité lumineuse  ||``. 
+Modifie la valeur ``|| logic: 0 ||`` de gauche du bloc ``|| logic:"0 < 0"||`` par le bloc ``|| input: niveau d'intensité lumineuse  ||``. 
  
-Modifie la valeur "0" (droite) du bloc ``|| logic:"0 < 0"||`` par la valeur "40".
+Modifie la valeur ``|| logic: 0 ||`` de droite du bloc ``|| logic:"0 < 0"||`` par la valeur ``|| logic: 40 ||``.
 
-Autrement dit, "si l'intensité de lumière est inférieure à "40"... un événement doit se produire.
+Il est possible que la valeur 40 soit trop petite ou trop grande.
 
 ```blocks 
 
@@ -68,9 +62,9 @@ basic.forever(function () {
 
 ## Étape 5 
  
-Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "si alors"  ||``. 
+Ajoute le bloc ``|| pins: écrire sur la broche P0  ||`` sous la condition ``|| logic: si alors ||``. 
  
-La valeur "1" permet au courant de passer dans le circuit.
+La valeur ``|| pins: 1  ||`` permet au courant de passer dans le circuit.
 
 Regarde l'indice pour connaître les valeurs à changer.
  
@@ -88,9 +82,9 @@ basic.forever(function () {
 
 ## Étape 6 
  
-Ajoute le bloc ``|| pins: écrire sur la broche  ||`` sous la condition ``|| logic: "sinon"  ||``. 
+Ajoute le bloc ``|| pins: écrire sur la broche P0  ||`` sous la condition ``|| logic: sinon ||``. 
 
-La valeur "0" empêche le courant de passer dans le circuit.
+La valeur ``|| pins: 0  ||`` empêche le courant de passer dans le circuit.
 
 Regarde l'indice pour connaître les valeurs à changer.
 
@@ -129,7 +123,7 @@ basic.forever(function () {
 
 ## Étape 8
  
-Remplace la valeur "0" du bloc ``|| variables: définir "LED" à "0"  ||`` par le bloc ``|| input: niveau d'intensité luminosité  ||``.
+Remplace la valeur ``|| variables: 0 ||`` du bloc ``|| variables: définir "LED" à "0"  ||`` par le bloc ``|| input: niveau d'intensité luminosité  ||``.
 
 ```blocks 
 
@@ -147,7 +141,7 @@ basic.forever(function () {
 
 ## Étape 9
  
-Ajoute le bloc ``|| variables: LED  ||`` dans le bloc ``|| basic: afficher nombre  ||`` sous la condition ``|| logic: "si"  ||``.
+Ajoute le bloc ``|| basic: montrer nombre  ||`` sous le bloc ``|| pins: écrire sur la broche P0 la valeur 1 ||``.
 
 ```blocks 
 
@@ -155,8 +149,8 @@ let LED = 0
 basic.forever(function () {
     LED = input.lightLevel()
     if (input.lightLevel() < 40) {
-        basic.showNumber(LED)
         pins.digitalWritePin(DigitalPin.P0, 1)
+        basic.showNumber(0)
     } else {
         pins.digitalWritePin(DigitalPin.P0, 0)
     }
@@ -164,6 +158,44 @@ basic.forever(function () {
 
 ``` 
 
+## Étape 10
+ 
+Ajoute le bloc ``|| variables: LED ||`` dans le bloc ``|| basic: montrer nombre ||``.
+
+```blocks 
+
+let LED = 0
+basic.forever(function () {
+    LED = input.lightLevel()
+    if (input.lightLevel() < 40) {
+        pins.digitalWritePin(DigitalPin.P0, 1)
+        basic.showNumber(LED)
+    } else {
+        pins.digitalWritePin(DigitalPin.P0, 0)
+    }
+})
+
+``` 
+
+## Étape 11
+ 
+Ajoute le bloc ``|| basic: pause (ms) 500)  ||`` sous le bloc ``|| basic: montrer nombre  ||``.
+
+```blocks 
+
+let LED = 0
+basic.forever(function () {
+    LED = input.lightLevel()
+    if (input.lightLevel() < 40) {
+        pins.digitalWritePin(DigitalPin.P0, 1)
+        basic.showNumber(LED)
+        basic.pause(500)
+    } else {
+        pins.digitalWritePin(DigitalPin.P0, 0)
+    }
+})
+
+```
 
 ## @showdialog 
 
