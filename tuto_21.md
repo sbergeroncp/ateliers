@@ -2,12 +2,6 @@
 
 # Un circuit électrique et numérique! 
 
-## @showdialog 
-
-Transforme ton micro:bit en un circuit électrique avec une lumière LED.
- 
-![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_5.jpg?raw=true) 
-
 ## Étape 1 
 
 Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||``. 
@@ -16,7 +10,7 @@ Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||``.
 
 Ajoute le bloc ``|| pins: écrire sur la broche  ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
  
-Remplace la valeur sur la broche "P0" par "1".
+Remplace la valeur sur la broche ``|| pins: P0  ||`` par ``|| pins: 1  ||``.
  
 
 ```blocks 
@@ -31,7 +25,7 @@ input.onButtonPressed(Button.A, function () {
  
 Ajoute le bloc ``|| pins: écrire sur la broche  ||`` dans le bloc ``||input:lorsque le bouton B est pressé||``. 
  
-Remplace la valeur sur la broche "P0" par "0".
+Remplace la valeur sur la broche ``|| pins: P0  ||`` par ``|| pins: 0  ||``.
  
 ```blocks 
 
@@ -44,7 +38,7 @@ input.onButtonPressed(Button.B, function () {
 
 Branche une pince alligator au port "P0" du micro:bit.
 
-La couleur n'a pas d'importance!
+La couleur du fil n'a pas d'importance!
 
 ![CSSBF](https://github.com/sbergeroncp/mon-makecode/blob/master/atelier_a_1.jpg?raw=true) 
 
