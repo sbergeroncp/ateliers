@@ -12,9 +12,9 @@ Supprime le bloc  ``|| basic:au démarrage ||``.
 
 ## Étape 2 
 
-Ajoute le bloc ``|| logic: "si vrai alors sinon" ||`` sous le bloc ``||basic:toujours||``.
+Ajoute le bloc ``|| logic: si vrai alors sinon ||`` sous le bloc ``||basic:toujours||``.
 
-Remplace la valeur "vrai" du bloc ``|| logic: "si alors sinon" ||`` par le bloc ``|| logic: ou ||``. 
+Remplace la valeur "vrai" du bloc ``|| logic: si alors sinon ||`` par le bloc ``|| logic: ou ||``. 
 
 Ajoute les blocs ``|| logic: 0 > 0 ||`` et ``|| logic: 0 <  0 ||`` dans le bloc ``|| logic: ou ||``
  
@@ -35,11 +35,11 @@ basic.forever(function () {
 
 ## Étape 3 
 
-Remplace la valeur 0 du bloc ``|| logic: 0 > 0 ||`` (gauche) par le bloc ``|| input: accélération (mg) x||``.
+Remplace la valeur ``|| logic: 0 ||`` de gauche du bloc ``|| logic: 0 > 0 ||`` par le bloc ``|| input: accélération (mg) x||``.
 
-Remplace la valeur 0 du bloc ``|| logic: 0 < 0 ||`` (droite) par le bloc ``|| input: accélération (mg) x||``.
+Remplace la valeur ``|| logic: 0 ||`` de droite du bloc ``|| logic: 0 < 0 ||`` par le bloc ``|| input: accélération (mg) x||``.
 
-Remplace les valeurs "0" par "500" et "-500".
+Remplace les valeurs ``|| logic: 0 ||`` par ``|| logic: 500 ||`` et ``|| logic: -500 ||``.
 
 Regarde l'indice pour connaître les valeurs à changer.
 
@@ -90,7 +90,7 @@ basic.forever(function () {
 
 ## Étape 5
 
-Ajoute le bloc ``|| loops: répéter 2 fois ||`` dans le bloc ``||basic:si alors||``.
+Ajoute le bloc ``|| loops: répéter 2 fois ||`` dans le bloc ``|| logic: si alors ||``.
 
 Ajouter les autres blocs dans la boucle.
 
