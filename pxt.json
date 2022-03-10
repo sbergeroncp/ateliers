@@ -35,8 +35,7 @@
         "tuto_23.md",
         "tuto_24.md",
         "tuto_25.md",
-        "tutorial-info-cache.json",
-        "_locales/fr/tuto_21.md"
+        "tutorial-info-cache.json"
     ],
     "testFiles": [
         "test.ts"
