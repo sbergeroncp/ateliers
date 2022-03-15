@@ -25,14 +25,16 @@ input.onPinPressed(TouchPin.P0, function () {
 
 ## Étape 3
 
-Remplace la valeur "0" par le bloc ``|| math: choisir au hasard de 0 à 10||``.
+Remplace la valeur  ``|| basic: 0 ||`` par le bloc ``|| math: choisir au hasard de 0 à 10||``.
 
-Modifie la valeur de "10" par "100"  .
+Modifie la valeur de ``|| math: 0 ||`` par ``|| math: 1 ||``.
+
+Modifie la valeur de ``|| math: 10 ||`` par ``|| math: 100 ||``.
 
 ```blocks
 
 input.onPinPressed(TouchPin.P0, function () {
-    basic.showNumber(randint(0, 100))
+    basic.showNumber(randint(1, 100))
 })
 
 ```
