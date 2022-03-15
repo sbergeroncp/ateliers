@@ -13,7 +13,7 @@ Supprime le bloc ``||basic:toujours||``.
 
 ## Étape 2
 
-Ajoute le bloc ``|| radio: radio définir groupe ||`` dans le bloc ``||basic: toujours||``.
+Ajoute le bloc ``|| radio: radio définir groupe ||`` dans le bloc ``||basic: au démarrage||``.
 
 Remplace la valeur ``|| radio: 0 ||`` par un nombre de 1 à 10.
 
