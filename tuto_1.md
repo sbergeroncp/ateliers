@@ -12,9 +12,6 @@ Supprime le bloc ``||basic:au démarrage||``.
 
 Ajoute le bloc ``|| basic: afficher texte ||`` dans le bloc ``||basic: toujours||``.
 
-Efface le mot "Hello" du bloc ``|| basic: afficher texte ||``.
-
-Écris tes initiales (ex. : Sébastien Bergeron = SB) dans bloc ``|| basic: afficher texte ||``.
 
 ```blocks
 
@@ -25,6 +22,19 @@ basic.forever(function () {
 ```
 
 ## Étape 3
+
+Efface le mot "Hello" du bloc ``|| basic: afficher texte ||``.
+
+Écris tes initiales ``|| basic: afficher texte ||``. (ex. : Sébastien Bergeron = SB) dans bloc 
+
+```blocks
+
+basic.forever(function () {
+    basic.showString("Hello!")
+})
+
+```
+## Étape 4
 
 Télécharge le programme dans le micro:bit.
 
