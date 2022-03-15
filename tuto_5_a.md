@@ -15,9 +15,9 @@ Supprime le bloc ``||basic:toujours||``.
 
 Ajoute le bloc ``|| radio: radio définir groupe ||`` dans le bloc ``||basic: toujours||``.
 
-Remplace la valeur "0" par un nombre de 1 à 10.
+Remplace la valeur ``|| radio: 0 ||`` par un nombre de 1 à 10.
 
-Chaque membre de l'équipe doit utiliser le même nombre. 
+Chaque membre de l'équipe doit utiliser le même nombre. Il s'agit du # de l'équipe.
 
 ```blocks
 
@@ -30,6 +30,8 @@ radio.setGroup(1)
 Ajoute le bloc ``|| radio: envoyer la chaine par radio ||`` dans le bloc ``|| input: lorsque le bouton A+B est pressé ||``.
 
 Modifie le message affiché dans le bloc ``|| radio: envoyer la chaine par radio ||``.
+
+Il s'agit du message secret que tu enverras.
 
 ```blocks
 
@@ -44,7 +46,7 @@ radio.setGroup(1)
 
 Ajoute le bloc ``|| basic: afficher texte ||`` dans le bloc ``|| radio: quand une donnée est reçue par radio ||``.
 
-Assure-toi de prendre le nom ``|| variables: receivedString ||``.
+Regarde attentivement l'indice!
 
 ```blocks
 
@@ -81,3 +83,5 @@ radio.setGroup(1)
 Télécharge le programme dans le micro:bit.
 
 Teste le programme avec les membres de ton équipe!
+
+Demande à un membre de ton équipe d'envoyer un message secret.
