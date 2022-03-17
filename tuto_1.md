@@ -25,7 +25,7 @@ basic.forever(function () {
 
 Efface le mot "Hello" du bloc ``|| basic: afficher texte ||``.
 
-Écris tes initiales ``|| basic: afficher texte ||``. (ex. : Sébastien Bergeron = SB) dans bloc 
+Écris tes initiales dans le ``|| basic: afficher texte ||``. (ex. : Sébastien Bergeron = SB) dans bloc 
 
 ```blocks
 
