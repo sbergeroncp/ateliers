@@ -1,7 +1,7 @@
 # Tutoriel - Arrosage automatisé - Capteur d'humidité
 
 ## @showdialog
-Dans ce tutoriel, tu apprendras à programmer le capteur d'humidité.
+Dans ce tutoriel, je te présente comment programmer le capteur d'humidité.
 
 ## Étape 1
 
