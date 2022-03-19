@@ -71,7 +71,7 @@ loops.everyInterval(10000, function () {
 
 ## Étape 6
 
-Remplace la valeur ``||basic: m0||`` du bloc ``||basic: montrer nombre||`` par le bloc ``||math: arrondi||``.
+Remplace la valeur ``||basic: 0||`` du bloc ``||basic: montrer nombre||`` par le bloc ``||math: arrondi||``.
 
 ```blocks
 
