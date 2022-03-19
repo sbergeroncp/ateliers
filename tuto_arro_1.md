@@ -86,7 +86,7 @@ loops.everyInterval(10000, function () {
 
 ## Étape 7
 
-Remplace la valeur ``||math: 0||`` du bloc ``||math: arrondi||`` par le bloc ``||variables: 0||``.
+Remplace la valeur ``||math: 0||`` du bloc ``||math: arrondi||`` par le bloc ``||variables: Terre||``.
 
 ```blocks
 
@@ -98,3 +98,9 @@ loops.everyInterval(10000, function () {
 })
 
 ```
+
+## Étape 8
+
+Télécharge la programmation du capteur d'humidité dans le micro:bit.
+
+Bonne expérimentation!
