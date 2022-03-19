@@ -35,7 +35,8 @@
         "tuto_23.md",
         "tuto_24.md",
         "tuto_25.md",
-        "tutorial-info-cache.json"
+        "tutorial-info-cache.json",
+        "5_bonus.md"
     ],
     "testFiles": [
         "test.ts"
