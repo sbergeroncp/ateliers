@@ -1,12 +1,12 @@
 # Niveau 5
 
-# Un circuit électrique avec un servomoteur! 
+## Étape 1
 
 Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||``. 
 
 ## Étape 2 
 
- Ajoute le bloc ``|| pins: régler position servo  ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
+Ajoute le bloc ``|| pins: régler position servo  ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
  
 Modifie la valeur du bloc ``|| pins: régler position servo  ||``.
 
