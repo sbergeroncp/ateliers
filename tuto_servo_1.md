@@ -2,7 +2,7 @@ Système d'arrosage automatisé
 
 ## Étape 1
 
-Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||``. 
+Supprime les blocs ``||basic: au démarrage||`` et ``||basic: toujours||``.
 
 ## Étape 2 
 
