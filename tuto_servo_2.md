@@ -48,3 +48,9 @@ input.onButtonPressed(Button.AB, function () {
 })
 
 ```
+
+## Étape 5
+
+Télécharge la programmation du capteur d'humidité dans le micro:bit.
+
+Bonne expérimentation!
