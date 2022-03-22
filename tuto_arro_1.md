@@ -15,8 +15,6 @@ Ajoute le bloc ``|| loops: every 500 ms ||``.
 
 Remplace la valeur par ``|| loops: 500 ms ||`` par ``|| loops: 10000 ms ||``.
 
-Nous souhaitons que le micro:bit prenne des valeurs à toutes les 10 secondes. 
-
 Si 1 seconde = ``|| loops: 1000 ms ||``, alors 10 secondes = ``|| loops: 10000 ms ||``.
 
 ```blocks
