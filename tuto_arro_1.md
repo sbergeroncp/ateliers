@@ -1,8 +1,5 @@
 # Tutoriel - Arrosage automatisé - Capteur d'humidité
 
-## @showdialog
-Dans ce tutoriel, je te présente comment programmer le capteur d'humidité.
-
 ## Étape 1
 
 Supprime les blocs ``||basic: au démarrage||`` et ``||basic: toujours||``.

@@ -1,4 +1,4 @@
-# Système d'arrosage automatisé
+# Tutoriel - Arrosage automatisé - Servomoteur
 
 ## Étape 1
 
@@ -6,7 +6,7 @@ Supprime les blocs ``||basic: au démarrage||`` et ``||basic: toujours||``.
 
 ## Étape 2 
 
- Ajoute le bloc ``|| pins: régler position servo  ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
+Ajoute le bloc ``|| pins: régler position servo  ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
  
 Modifie la broche de ``|| pins: régler position servo  ||`` pour ``|| pins: P1  ||``.
 
