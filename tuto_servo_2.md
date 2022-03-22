@@ -1,5 +1,10 @@
 # Tutoriel - Arrosage automatisé - Servomoteur
 
+
+## @showdialog
+
+Programme le servomoteur.
+
 ## Étape 1
 
 Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc ``||input: lorsque le bouton A est pressé||``.
