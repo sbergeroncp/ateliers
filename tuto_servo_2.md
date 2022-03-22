@@ -2,11 +2,11 @@
 
 ## Étape 1
 
-Supprime les blocs ``||basic: au démarrage||``.
+Supprime les blocs ``||basic:au démarrage||`` et ``||basic:toujours||``.
 
 ## Étape 2
 
-Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc``||input: lorsque le bouton A est pressé||``.
+Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc`` ||input: lorsque le bouton A est pressé||``.
 
 Modifie la valeur de la ``||pins: broche ||`` ``||pins: P0 ||`` pour ``||pins: P1 ||``.
 
@@ -21,7 +21,7 @@ input.onButtonPressed(Button.A, function () {
 
 ## Étape 3
 
-Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc``||input: lorsque le bouton B est pressé||``.
+Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc`` ||input: lorsque le bouton B est pressé||``.
 
 Modifie la valeur de la ``||pins: broche ||`` ``||pins: P0 ||`` pour ``||pins: P1 ||``.
 
@@ -36,7 +36,7 @@ input.onButtonPressed(Button.B, function () {
 
 ## Étape 4
 
-Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc``||input: lorsque le bouton A+B est pressé||``.
+Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc`` ||input: lorsque le bouton A+B est pressé||``.
 
 Modifie la valeur de la ``||pins: broche ||`` ``||pins: P0 ||`` pour ``||pins: P1 ||``.
 
@@ -51,6 +51,6 @@ input.onButtonPressed(Button.AB, function () {
 
 ## Étape 5
 
-Télécharge la programmation du capteur d'humidité dans le micro:bit.
+Télécharge la programmation du servomoteur dans le micro:bit.
 
 Bonne expérimentation!
