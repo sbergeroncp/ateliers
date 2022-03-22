@@ -1,4 +1,8 @@
-# Tutoriel - Arrosage automatisé - Servomoteur
+# Tutoriel 4
+
+## @showdialog
+
+Fais apparaître une image lorsqu'un bouton du micro:bit est pressé.
 
 ## Étape 1
 
