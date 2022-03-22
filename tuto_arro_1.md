@@ -98,6 +98,6 @@ loops.everyInterval(10000, function () {
 
 ## Étape 8
 
-Télécharge la programmation du capteur d'humidité dans le micro:bit.
+Télécharge la programmation dans le micro:bit.
 
 Bonne expérimentation!
