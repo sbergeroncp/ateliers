@@ -37,8 +37,8 @@
         "tuto_25.md",
         "tutorial-info-cache.json",
         "tuto_5_d.md",
-        "tuto_bonus_5.md",
-        "tuto_arro_1.md"
+        "tuto_arro_1.md",
+        "tuto_servo_1.md"
     ],
     "testFiles": [
         "test.ts"
