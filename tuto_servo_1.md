@@ -1,26 +1,22 @@
-# Tutoriel 4
+# Tutoriel - Arrosage automatisé - Capteur d'humidité
 
-## @showdialog
+## Étape 1 
 
-Fais apparaître une image lorsqu'un bouton du micro:bit est pressé.
-
-## Étape 1
-
-Supprime les blocs ``||basic: au démarrage||`` et ``||basic: toujours||``.
+Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||``. 
 
 ## Étape 2 
 
 Ajoute le bloc ``|| pins: régler position servo  ||`` dans le bloc ``||input:lorsque le bouton A est pressé||``. 
  
-Modifie la broche de ``|| pins: régler position servo  ||`` pour ``|| pins: P1  ||``.
+Modifie la valeur du bloc ``|| pins: régler position servo  ||``.
 
-Modifie la valeur du ``|| pins: degré ||`` pour ``|| pins: 45 ||``.
+Modifie la valeur du degré pour ``|| pins: 45 ||``.
  
 
 ```blocks 
 
 input.onButtonPressed(Button.A, function () {
-    pins.servoWritePin(AnalogPin.P1, 45)
+    pins.servoWritePin(AnalogPin.P0, 45)
 })
 
 ``` 
@@ -29,15 +25,15 @@ input.onButtonPressed(Button.A, function () {
  
 Ajoute le bloc ``|| pins: régler position servo  ||`` dans le bloc ``||input:lorsque le bouton B est pressé||``. 
  
-Modifie la broche de ``|| pins: régler position servo  ||`` pour ``|| pins: P1  ||``.
+Modifie la valeur du bloc ``|| pins: régler position servo  ||``.
 
-Modifie la valeur du ``|| pins: degré ||`` pour ``|| pins: 90 ||``.
+Modifie la valeur du degré pour ``|| pins: 90 ||``.
  
 
 ```blocks 
 
 input.onButtonPressed(Button.B, function () {
-    pins.servoWritePin(AnalogPin.P1, 90)
+    pins.servoWritePin(AnalogPin.P0, 90)
 })
 
 ``` 
@@ -46,37 +42,14 @@ input.onButtonPressed(Button.B, function () {
  
 Ajoute le bloc ``|| pins: régler position servo  ||`` dans le bloc ``||input:lorsque le bouton A+B est pressé||``. 
  
-Modifie la broche de ``|| pins: régler position servo  ||`` pour ``|| pins: P1  ||``.
+Modifie le valeur du bloc ``|| pins: régler position servo  ||``.
 
-Modifie la valeur du ``|| pins: degré ||`` pour ``|| pins: 0 ||``.
+Modifie la valeur du degré pour ``|| pins: 0 ||``.
  
 
 ```blocks 
 
 input.onButtonPressed(Button.AB, function () {
-    pins.servoWritePin(AnalogPin.P1, 0)
+    pins.servoWritePin(AnalogPin.P0, 0)
 })
 
-``` 
-
-## Étape 5 
-
-Télécharge la programmation dans le micro:bit.
-
-Teste maintenant le circuit.
-
-```blocks 
-
-input.onButtonPressed(Button.A, function () {
-    pins.servoWritePin(AnalogPin.P1, 45)
-})
-
-input.onButtonPressed(Button.B, function () {
-    pins.servoWritePin(AnalogPin.P1, 90)
-})
-
-input.onButtonPressed(Button.AB, function () {
-    pins.servoWritePin(AnalogPin.P1, 0)
-})
-
-``` 
