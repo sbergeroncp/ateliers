@@ -1,4 +1,4 @@
-Système d'arrosage automatisé
+# Système d'arrosage automatisé
 
 ## Étape 1
 
