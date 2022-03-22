@@ -6,7 +6,7 @@ Supprime les blocs ``||basic:au démarrage||`` et ``||basic:toujours||``.
 
 ## Étape 2
 
-Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc`` ||input: lorsque le bouton A est pressé||``.
+Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc ``||input: lorsque le bouton A est pressé||``.
 
 Modifie la valeur de la ``||pins: broche ||`` ``||pins: P0 ||`` pour ``||pins: P1 ||``.
 
@@ -21,7 +21,7 @@ input.onButtonPressed(Button.A, function () {
 
 ## Étape 3
 
-Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc`` ||input: lorsque le bouton B est pressé||``.
+Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc ``||input: lorsque le bouton B est pressé||``.
 
 Modifie la valeur de la ``||pins: broche ||`` ``||pins: P0 ||`` pour ``||pins: P1 ||``.
 
@@ -36,7 +36,7 @@ input.onButtonPressed(Button.B, function () {
 
 ## Étape 4
 
-Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc`` ||input: lorsque le bouton A+B est pressé||``.
+Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc ``||input: lorsque le bouton A+B est pressé||``.
 
 Modifie la valeur de la ``||pins: broche ||`` ``||pins: P0 ||`` pour ``||pins: P1 ||``.
 
