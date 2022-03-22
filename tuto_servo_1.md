@@ -1,6 +1,6 @@
-# Niveau 5
+Système d'arrosage automatisé
 
-# Un circuit électrique avec un servomoteur! 
+## Étape 1
 
 Supprime les blocs ``|| basic:au démarrage ||`` et ``|| basic:toujours ||``. 
 
@@ -55,7 +55,7 @@ input.onButtonPressed(Button.AB, function () {
 
 ``` 
 
-## @showdialog 
+## Étape 5 
 
 Télécharge la programmation dans le micro:bit.
 
