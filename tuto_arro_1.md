@@ -1,8 +1,8 @@
-# Tutoriel - Arrosage automatisé - Capteur d'humidité
+# Tutoriel - Arrosage automatisé - Capteur d'humidité et servomoteur
 
 ## @showdialog
 
-Programme le capteur d'humidité.
+Programme le capteur d'humidité et le servomoteur.
 
 
 ## Étape 1
@@ -47,7 +47,7 @@ Remplace la valeur ``||variables: 0||`` du bloc ``||variables: définir Terre ||
 
 let Terre = 0
 loops.everyInterval(10000, function () {
-    Terre = pins.digitalReadPin(DigitalPin.P0)
+    Terre = pins.analogReadPin(AnalogPin.P0)
 })
 
 ```
@@ -62,7 +62,7 @@ Remplace la valeur ``||basic: 100||`` du bloc ``||basic: pause (ms) ||`` par ``|
 
 let Terre = 0
 loops.everyInterval(10000, function () {
-    Terre = pins.digitalReadPin(DigitalPin.P0)
+    Terre = pins.analogReadPin(AnalogPin.P0)
     basic.showNumber(0)
     basic.pause(1000)
 })
@@ -77,7 +77,7 @@ Remplace la valeur ``||basic: 0||`` du bloc ``||basic: montrer nombre||`` par le
 
 let Terre = 0
 loops.everyInterval(10000, function () {
-    Terre = pins.digitalReadPin(DigitalPin.P0)
+    Terre = pins.analogReadPin(AnalogPin.P0)
     basic.showNumber(Math.round(0))
     basic.pause(1000)
 })
@@ -92,7 +92,7 @@ Remplace la valeur ``||math: 0||`` du bloc ``||math: arrondi||`` par le bloc ``|
 
 let Terre = 0
 loops.everyInterval(10000, function () {
-    Terre = pins.digitalReadPin(DigitalPin.P0)
+    Terre = pins.analogReadPin(AnalogPin.P0)
     basic.showNumber(Math.round(Terre))
     basic.pause(1000)
 })
