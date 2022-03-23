@@ -12,7 +12,9 @@ Supprime les blocs ``||basic:toujours||`` et ``||basic:au démarrage||``.
 
 Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Temps||``.
 
-Ajoute le bloc ``||variables: définir Temps à "4"||`` dans le bloc ``||input: lorsque le bout A est pressé||``.
+Ajoute le bloc ``||variables: définir Temps||`` dans le bloc ``||input: lorsque le bout A est pressé||``.
+
+Modifie la valeur du bloc ``||variables: définir Temps||`` pour ``||variables: 4||``.
 
 ```blocks
 
@@ -25,7 +27,7 @@ input.onButtonPressed(Button.A, function () {
 
 ## Étape 3
 
-Ajoute le bloc ``||loops: répéter 3 fois||`` sous le bloc ``||variables: définir Nombre à "4"||``.
+Ajoute le bloc ``||loops: répéter 3 fois||`` sous le bloc ``||variables: définir Nombre||``.
 
 ```blocks
 
@@ -136,9 +138,9 @@ input.onButtonPressed(Button.A, function () {
 ```
 ## Étape 9
 
-Ajoute le bloc ``||basic:afficher texte "Hello!"||`` sous le bloc ``||music: jouer ton Middle G pendant 1 temps||``.
+Ajoute le bloc ``||basic:afficher texte ||`` sous le bloc ``||music: jouer ton Middle G pendant 1 temps||``.
 
-Remplace le texte ``||basic: Hello! ||`` par ``||basic: Go! ||``.
+Remplace le texte du bloc ``||basic: affiche texte ||`` par ``||basic: Go! ||``.
 
 ```blocks
 
@@ -163,5 +165,3 @@ input.onButtonPressed(Button.A, function () {
 Télécharge le programme dans le micro:bit.
 
 Teste le programme!
-
-Manipule le micro:bit. Que remarques-tu?
