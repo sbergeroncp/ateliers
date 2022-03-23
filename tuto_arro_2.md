@@ -333,3 +333,17 @@ input.onButtonPressed(Button.B, function () {
     pins.digitalWritePin(DigitalPin.P1, 0)
 })
 ```
+
+## Étape 22
+
+Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc``||basic: au démarrage ||``.
+
+Modifie la valeur de la ``||pins: broche ||`` ``||pins: P0 ||`` pour ``||pins: P1 ||``.
+
+Modifie le ``||pins: degré ||`` pour ``||pins: l'angle souhaité ||``.
+
+Assure-toi que la paille ne touche ni à l'eau ni à la terre au démarrage.
+
+```blocks
+pins.servoWritePin(AnalogPin.P1, 45)
+```
