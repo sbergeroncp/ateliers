@@ -22,6 +22,8 @@ music.setTempo(120)
 
 Ajoute les blocs ``||music: jouer ton Middle pendant 1 temps ||`` dans le bloc ``||input: lorsque le bouton A est pressé||``.
 
+Regarde l'indice.
+
 ```blocks
 
 input.onButtonPressed(Button.A, function () {
@@ -36,6 +38,8 @@ input.onButtonPressed(Button.A, function () {
 ## Étape 4
 
 Ajoute la séquence de notes musicales dans le bloc ``||loops: répéter 2 fois ||``.
+
+Regarde l'indice.
 
 ```blocks
 
@@ -55,6 +59,8 @@ input.onButtonPressed(Button.A, function () {
 Ajoute les blocs ``||music: jouer ton Middle pendant 1 temps ||`` sous le bloc ``||loops: répéter 2 fois ||``.
 
 Attention, la dernière note joue pendant 2 temps.
+
+Regarde l'indice.
 
 ```blocks
 
@@ -140,4 +146,4 @@ Télécharge le programme dans le micro:bit.
 
 Teste le programme! 
 
-Relis les écouteurs au micro:bit avec des pinces alligators.
+Relis les écouteurs au micro:bit avec des pinces alligators si possible!
