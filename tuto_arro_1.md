@@ -2,7 +2,7 @@
 
 ## @showdialog
 
-Programme le capteur d'humidité et le servomoteur.
+Programme le capteur d'humidité
 
 
 ## Étape 1
