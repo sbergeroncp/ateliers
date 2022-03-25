@@ -2,7 +2,7 @@
 
 ## @showdialog
 
-Programme le capteur d'humidité
+Programme le capteur d'humidité.
 
 ## Étape 1
 
