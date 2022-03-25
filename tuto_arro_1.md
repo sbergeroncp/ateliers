@@ -4,7 +4,6 @@
 
 Programme le capteur d'humidité
 
-
 ## Étape 1
 
 Supprime les blocs ``||basic: au démarrage||`` et ``||basic: toujours||``.

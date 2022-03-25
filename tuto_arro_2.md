@@ -119,7 +119,7 @@ loops.everyInterval(10000, function () {
 
 ## Étape 9
 
-Remplace la valeur  ``|| vrai ||`` par le bloc ``||logic: 0 < 0  ||``.
+Remplace la valeur  ``|| vrai ||`` par le bloc ``||logic: 0 > 0  ||``.
 
 ```blocks
 let Terre = 0
@@ -127,7 +127,7 @@ loops.everyInterval(10000, function () {
     Terre = pins.analogReadPin(AnalogPin.P0)
     basic.showNumber(Math.round(Terre))
     basic.pause(1000)
-    if (0 < 0) {
+    if (0 > 0) {
     	
     } else {
     	
@@ -137,7 +137,7 @@ loops.everyInterval(10000, function () {
 
 ## Étape 10
 
-Remplace la valeur  ``||logic: 0  ||`` de gauche du bloc ``||logic: 0 < 0  ||`` par le bloc ``||variables: Terre||``.
+Remplace la valeur  ``||logic: 0  ||`` de gauche du bloc ``||logic: 0 > 0  ||`` par le bloc ``||variables: Terre||``.
 
 ```blocks
 let Terre = 0
@@ -145,7 +145,7 @@ loops.everyInterval(10000, function () {
     Terre = pins.analogReadPin(AnalogPin.P0)
     basic.showNumber(Math.round(Terre))
     basic.pause(1000)
-    if (Terre < 0) {
+    if (Terre > 0) {
     	
     } else {
     	
@@ -155,7 +155,7 @@ loops.everyInterval(10000, function () {
 
 ## Étape 11
 
-Remplace la valeur  ``||logic: 0  ||`` de droite du bloc ``||logic: 0 < 0  ||`` par la valeur calculée.
+Remplace la valeur  ``||logic: 0  ||`` de droite du bloc ``||logic: 0 > 0  ||`` par la valeur calculée.
 
 ```blocks
 let Terre = 0
@@ -163,7 +163,7 @@ loops.everyInterval(10000, function () {
     Terre = pins.analogReadPin(AnalogPin.P0)
     basic.showNumber(Math.round(Terre))
     basic.pause(1000)
-    if (Terre < 0) {
+    if (Terre > 0) {
     	
     } else {
     	
@@ -185,7 +185,7 @@ loops.everyInterval(10000, function () {
     Terre = pins.analogReadPin(AnalogPin.P0)
     basic.showNumber(Math.round(Terre))
     basic.pause(1000)
-    if (Terre < 0) {
+    if (Terre > 0) {
         pins.servoWritePin(AnalogPin.P1, 110)
     } else {
     	
@@ -206,7 +206,7 @@ loops.everyInterval(10000, function () {
     Terre = pins.analogReadPin(AnalogPin.P0)
     basic.showNumber(Math.round(Terre))
     basic.pause(1000)
-    if (Terre < 0) {
+    if (Terre > 0) {
         pins.servoWritePin(AnalogPin.P1, 110)
         basic.pause(2000)
     } else {
@@ -229,7 +229,7 @@ loops.everyInterval(10000, function () {
     Terre = pins.analogReadPin(AnalogPin.P0)
     basic.showNumber(Math.round(Terre))
     basic.pause(1000)
-    if (Terre < 0) {
+    if (Terre > 0) {
         pins.servoWritePin(AnalogPin.P1, 110)
         basic.pause(2000)
         pins.servoWritePin(AnalogPin.P1, 0)
@@ -249,7 +249,7 @@ loops.everyInterval(10000, function () {
     Terre = pins.analogReadPin(AnalogPin.P0)
     basic.showNumber(Math.round(Terre))
     basic.pause(1000)
-    if (Terre < 0) {
+    if (Terre > 0) {
         pins.servoWritePin(AnalogPin.P1, 110)
     } else {
         basic.showIcon(IconNames.Heart)
