@@ -26,7 +26,7 @@ input.onButtonPressed(Button.A, function () {
 ```
 ## @showdialog
 
-Parfois, il vaut mieux de faire réaliser des sauts (25, 30, 35, etc) au servomoteur dans le but de réaliser un angle supérieur ou égal à 90.
+Parfois, il vaut mieux de faire réaliser des sauts (ex. : 25 degrés, 30.., 35.., etc) au servomoteur dans le but de réaliser un angle supérieur ou égal à 90.
 
 ## Étape 3
 
