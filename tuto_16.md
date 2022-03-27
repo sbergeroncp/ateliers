@@ -1,104 +1,181 @@
+# Tutoriel 16
+
 ## @showdialog
 
-Distanciation sociale entre élèves!
+Programme ton premier jeu.
 
 ## Étape 1
 
-Ajoute le bloc ``||radio: radio définir groupe "1"||`` dans le bloc ``||basic: au démarrage||``.
+Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Sprite||``. 
+
+Ajoute le bloc ``||variables: définir Sprite||`` dans le bloc ``||basic: au démarrage||``.
 
 ```blocks
 
-radio.setGroup(1)
-})
+let Sprite = 0
 
 ```
 
 ## Étape 2
 
-Ajoute le bloc ``||radio: envoyer le nombre "0" par radio||`` dans le bloc ``||basic: toujours||``.
+Remplace la valeur ``||variables: 0||`` du bloc ``||variables: définir Sprite||`` par le bloc ``|| game: créer un sprite ||``.
 
 ```blocks
 
-basic.forever(function () {
-    radio.sendNumber(0)
-})
+let Sprite = game.createSprite(2, 2)
 
 ```
 
 ## Étape 3
 
-Ajoute le bloc ``||logic: "si alors sinon"||`` dans le bloc ``||radio: quand une donnée est reçue par radio||``.
+Ajoute le bloc ``||variables: Sprite||`` ``|| game: se déplace de 1 ||`` dans le bloc ``||basic: toujours||``.
 
 ```blocks
 
-radio.onReceivedNumber(function (receivedNumber) {
-    if (true) {
-    	
-    } else {
-    	
-    }
+let Sprite = game.createSprite(2, 2)
+basic.forever(function () {
+    let sprite: game.LedSprite = null
+    sprite.move(1)
 })
-
 
 ```
 
 ## Étape 4
 
-Remplace la valeur "vrai" par le bloc ``||logic: "0 < 0)"||`` dans le bloc ``||logic:"si alors sinon" ||``.
+Ajoute le bloc ``||variables: Sprite||`` ``|| game: si au bord, rebondir ||`` sous le bloc ``||variables: Sprite||`` ``|| game: se déplace de 1 ||``.
 
 ```blocks
 
-radio.onReceivedString(function (receivedNumber) {
-    if (0 < 0) {
-    	
-    } else {
-    	
-    }
+let sprite = game.createSprite(2, 2)
+basic.forever(function () {
+    sprite.move(1)
+    sprite.ifOnEdgeBounce()
 })
 
 ```
 
 ## Étape 5
 
-Remplace la valeur "0" (gauche) par le le bloc ``||radio: paquet reçu force du signal||``.
-
-Remplace la valeur "0" (droite) par la valeur -65.
+Ajoute le bloc ``||basic: pause (ms) 100||`` sous le bloc ``||variables: Sprite||`` ``|| game: si au bord, rebondir ||``.
 
 ```blocks
 
-radio.onReceivedString(function (receivedNumber) {
-    if (radio.receivedPacket(RadioPacketProperty.SignalStrength) < -65) {
-    	
-    } else {
-    	
-    }
+let sprite = game.createSprite(2, 2)
+basic.forever(function () {
+    sprite.move(1)
+    sprite.ifOnEdgeBounce()
+    basic.pause(100)
 })
 
 ```
 
 ## Étape 6
 
-Ajoute le bloc ``||basic: montre l'icône||`` sous le bloc ``||logic: si||``.
-
-Ajoute le bloc ``||basic: montre l'icône||`` sous le bloc ``||logic: sinon||``.
+Ajoute le bloc ``||logic: si vrai alors sinon||`` dans le bloc ``|| input: lorsque le bouton A est pressé ||``.
 
 ```blocks
 
-radio.onReceivedString(function (receivedNumber) {
-    if (radio.receivedPacket(RadioPacketProperty.SignalStrength) < -65) {
-        basic.showIcon(IconNames.No)
+input.onButtonPressed(Button.A, function () {
+    if (true) {
+    	
     } else {
-        basic.showIcon(IconNames.Yes)
+    	
     }
-})
-
 
 ```
 
 ## Étape 7
 
+Remplace la valeur ``||logic: vrai||`` par le bloc ``||logic: 0 = 0||``.
+
+```blocks
+
+input.onButtonPressed(Button.A, function () {
+    if (0 == 0) {
+    	
+    } else {
+    	
+    }
+})
+
+```
+
+## Étape 8
+
+Remplace la valeur ``||logic: 0||`` de gauche dans le bloc ``||logic: 0 = 0||`` par le bloc par le bloc ``||variables: Sprite||`` ``|| game: x ||``.
+
+Remplace la valeur ``||logic: 0||`` de droite  dans le bloc ``||logic: 0 = 0||`` par la valeur ``||logic: 2||``.
+
+```blocks
+
+input.onButtonPressed(Button.A, function () {
+    if (sprite.get(LedSpriteProperty.X) == 2) {
+    	
+    } else {
+    	
+    }
+})
+let sprite: game.LedSprite = null
+sprite = game.createSprite(2, 2)
+basic.forever(function () {
+    sprite.move(1)
+    sprite.ifOnEdgeBounce()
+    basic.pause(100)
+})
+
+```
+
+## Étape 9 
+
+Ajoute le bloc ``|| game: incrémenter le score de 1 ||`` dans le bloc ``||logic: si vrai alors sinon||`` sous ``||logic: si vrai alors ||``.
+
+Ajoute le bloc ``|| basic: montrer nombre ||`` dans le bloc ``||logic: si vrai alors sinon||`` sous ``||logic: sinon ||``.
+
+Ajoute le bloc ``|| game: score ||`` dans le bloc ``|| basic: montrer nombre ||``.
+
+```blocks
+
+input.onButtonPressed(Button.A, function () {
+    if (sprite.get(LedSpriteProperty.X) == 2) {
+        game.addScore(1)
+    } else {
+        basic.showNumber(game.score())
+    }
+})
+let sprite: game.LedSprite = null
+sprite = game.createSprite(2, 2)
+basic.forever(function () {
+    sprite.move(1)
+    sprite.ifOnEdgeBounce()
+    basic.pause(100)
+})
+```
+
+## Étape 10
+
+Ajoute le bloc ``|| game: fin du jeu ||`` sous le bloc ``|| basic: montrer nombre ||`` ``|| game: score ||``.
+
+```blocks
+
+input.onButtonPressed(Button.A, function () {
+    if (sprite.get(LedSpriteProperty.X) == 2) {
+        game.addScore(1)
+    } else {
+        basic.showNumber(game.score())
+        game.gameOver()
+    }
+})
+let sprite: game.LedSprite = null
+sprite = game.createSprite(2, 2)
+basic.forever(function () {
+    sprite.move(1)
+    sprite.ifOnEdgeBounce()
+    basic.pause(100)
+})
+```
+
+## Étape 11
+
 Télécharge le programme dans le micro:bit.
 
-Teste le code avec un autre élève qui a le même programme.
-
-À quelle distance le micro:bit te permet-il de t'approcher d'un autre élève ?
+Teste le programme!

@@ -39,7 +39,8 @@
         "tuto_5_d.md",
         "tuto_arro_1.md",
         "tuto_servo_2.md",
-        "tuto_arro_2.md"
+        "tuto_arro_2.md",
+        "tuto_16.md"
     ],
     "testFiles": [
         "test.ts"
