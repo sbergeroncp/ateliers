@@ -24,6 +24,9 @@ input.onButtonPressed(Button.A, function () {
 })
 
 ```
+## @showdialog
+
+Parfois, il vaut mieux de faire réaliser des sauts (25, 30, 35, etc) au servomoteur dans le but de réaliser un angle supérieur ou égal à 90.
 
 ## Étape 3
 
@@ -71,7 +74,11 @@ input.onButtonPressed(Button.AB, function () {
 
 ```
 
-## Étape 6
+## @showdialog
+
+Assure-toi que la paille pointe vers la terre lorsque l'angle est à 0.
+
+Assure-toi également que la paille est dans l'eau lorsque l'angle est supérieur à 90.
 
 Télécharge la programmation du servomoteur dans le micro:bit.
 
