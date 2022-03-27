@@ -179,3 +179,5 @@ basic.forever(function () {
 Télécharge le programme dans le micro:bit.
 
 Teste le programme!
+
+Appuie sur le bouton A lorsque le pixel est au centre de l'écran! Bonne chance.
