@@ -129,17 +129,13 @@ basic.forever(function () {
 
 Ajoute le bloc ``|| game: incrémenter le score de 1 ||`` dans le bloc ``||logic: si vrai alors sinon||`` sous ``||logic: si vrai alors ||``.
 
-Ajoute le bloc ``|| basic: montrer nombre ||`` dans le bloc ``||logic: si vrai alors sinon||`` sous ``||logic: sinon ||``.
-
-Ajoute le bloc ``|| game: score ||`` dans le bloc ``|| basic: montrer nombre ||``.
-
 ```blocks
 
 input.onButtonPressed(Button.A, function () {
     if (sprite.get(LedSpriteProperty.X) == 2) {
         game.addScore(1)
     } else {
-        basic.showNumber(game.score())
+    	
     }
 })
 let sprite: game.LedSprite = null
@@ -149,11 +145,12 @@ basic.forever(function () {
     sprite.ifOnEdgeBounce()
     basic.pause(100)
 })
+
 ```
 
 ## Étape 10
 
-Ajoute le bloc ``|| game: fin du jeu ||`` sous le bloc ``|| basic: montrer nombre ||`` ``|| game: score ||``.
+Ajoute le bloc ``|| game: fin du jeu ||`` sous ``||logic: sinon||``.
 
 ```blocks
 
@@ -161,7 +158,6 @@ input.onButtonPressed(Button.A, function () {
     if (sprite.get(LedSpriteProperty.X) == 2) {
         game.addScore(1)
     } else {
-        basic.showNumber(game.score())
         game.gameOver()
     }
 })
@@ -172,6 +168,7 @@ basic.forever(function () {
     sprite.ifOnEdgeBounce()
     basic.pause(100)
 })
+
 ```
 
 ## Étape 11
