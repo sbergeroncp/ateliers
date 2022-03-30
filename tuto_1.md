@@ -2,7 +2,7 @@
 
 ## @showdialog
 
-Fais apparaître tes initiales lorsque le micro:bit est activé.
+Fais apparaître ton prénom lorsque le micro:bit est activé.
 
 ## Étape 1
 
@@ -25,7 +25,7 @@ basic.forever(function () {
 
 Efface le mot "Hello" du bloc ``|| basic: afficher texte ||``.
 
-Écris tes initiales dans le ``|| basic: afficher texte ||``. (ex. : Sébastien Bergeron = SB) dans bloc 
+Écris ton prénom dans le ``|| basic: afficher texte ||`` (ex. : Seb).
 
 ```blocks
 
