@@ -40,7 +40,8 @@
         "tuto_arro_1.md",
         "tuto_servo_2.md",
         "tuto_arro_2.md",
-        "tuto_16.md"
+        "tuto_16.md",
+        "tuto_17.md"
     ],
     "testFiles": [
         "test.ts"
