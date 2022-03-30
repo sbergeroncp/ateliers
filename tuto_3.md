@@ -2,7 +2,7 @@
 
 ## @showdialog
 
-Fais apparaître une image lorsque le micro:bit est activé.
+Fais apparaître une image dessinée lorsque le micro:bit est activé.
 
 ## Étape 1
 
