@@ -156,6 +156,8 @@ input.onButtonPressed(Button.B, function () {
 
 Assure-toi que ta programmation est exacte.
 
+Regarde l'indice!
+
 ```blocks
 
 let Chrono = 0
@@ -175,3 +177,5 @@ input.onButtonPressed(Button.B, function () {
 Télécharge le programme dans le micro:bit.
 
 Teste le programme!
+
+Quelles sont les fonctions des boutons A et B ?
