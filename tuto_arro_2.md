@@ -179,6 +179,12 @@ Modifie la valeur de la ``||pins: broche ||`` ``||pins: P0 ||`` pour ``||pins: P
 
 Modifie le ``||pins: degré ||`` pour ``||pins: l'angle souhaité ||``.
 
+Ajoute le bloc ``||basic: pause (ms) 100 ||`` sous le bloc ``||pins: régler position servo ||``.
+
+Ajoute le bloc ``||basic: pause (ms) 100 ||`` sous le bloc ``||pins: régler position servo ||``.
+
+Fais réaliser des bonds au servomoteur pour te rendre à l'angle souhaité. Ajoute un bloc  ``||basic: pause (ms) 100 ||`` après chaque bond.
+
 ```blocks
 let Terre = 0
 loops.everyInterval(10000, function () {
@@ -186,7 +192,8 @@ loops.everyInterval(10000, function () {
     basic.showNumber(Math.round(Terre))
     basic.pause(1000)
     if (Terre > 0) {
-        pins.servoWritePin(AnalogPin.P1, 110)
+        pins.servoWritePin(AnalogPin.P1, 45)
+        basic.pause(100)
     } else {
     	
     }
