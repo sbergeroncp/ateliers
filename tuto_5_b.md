@@ -41,34 +41,6 @@ input.onPinPressed(TouchPin.P0, function () {
 
 ## Étape 4
 
-Ajoute le bloc ``|| basic: pause (ms) 2000 ||`` sous le bloc ``|| basic: montrer nombre ||``.
-
-
-```blocks
-
-input.onPinPressed(TouchPin.P0, function () {
-    basic.showNumber(randint(1, 100))
-    basic.pause(2000)
-    })
-
-```
-
-## Étape 5
-
-Ajoute le bloc ``|| basic: effacer l'écran ||`` sous le bloc ``|| basic: pause (ms) 2000 ||``.
-
-```blocks
-
-input.onPinPressed(TouchPin.P0, function () {
-    basic.showNumber(randint(1, 100))
-    basic.pause(2000)
-    basic.clearScreen()
-})
-
-```
-
-## Étape 6
-
 Télécharge le programme dans le micro:bit.
 
 Teste le programme avec les membres de ton équipe!
