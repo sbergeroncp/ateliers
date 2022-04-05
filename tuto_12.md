@@ -1,6 +1,6 @@
 # Niveau 3
 
-# tuto_12
+# Tutoriel 12
 
 ## @showdialog
 

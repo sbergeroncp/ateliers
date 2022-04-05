@@ -1,57 +1,72 @@
 # Niveau 3
 
+# Tutoriel 15
+
 ## @showdialog
 
-Le décompte musical!
+Une boussole pour s'orienter!
+
+## @showdialog
+
+Voici les points cardinaux importants sur une boussole.
+
+![Atelier](https://cdn.sanity.io/images/ajwvhvgo/production/c1ba4627f246bc638f48cd51afb80342fd1db540-2019x1878.png?w=653&q=80&fit=max&auto=format)
 
 ## Étape 1
 
-Supprime les blocs ``||basic:toujours||`` et ``||basic:au démarrage||``.
+Supprime le bloc ``||basic:au démarrage||``.
 
 ## Étape 2
 
-Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Temps||``.
+Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Degres||``. (sans accent sur le "é")
 
-Ajoute le bloc ``||variables: définir Temps||`` dans le bloc ``||input: lorsque le bout A est pressé||``.
-
-Modifie la valeur du bloc ``||variables: définir Temps||`` pour ``||variables: 4||``.
+Ajoute le bloc ``||variables: définir Degres à "0"||`` dans le bloc ``||basic: toujours||``.
 
 ```blocks
 
-let Temps = 0
-input.onButtonPressed(Button.A, function () {
-    Temps = 4
+let Degres = 0
+basic.forever(function () {
+    Degres = 0
 })
 
 ```
 
 ## Étape 3
 
-Ajoute le bloc ``||loops: répéter 3 fois||`` sous le bloc ``||variables: définir Nombre||``.
+Remplace la valeur ``||variables: 0 ||`` dans le bloc ``||variables: définir Degres||`` par le bloc ``||input: direction de la boussole||``.
 
 ```blocks
 
-let Temps = 0
-input.onButtonPressed(Button.A, function () {
-    Temps = 4
-    for (let index = 0; index < 3; index++) {
-    	
-    }
+let Degres = 0
+basic.forever(function () {
+    Degres = input.compassHeading()
 })
 
 ```
 
 ## Étape 4
 
-Ajoute le bloc ``||music: jouer ton Middle C pendant 1/4 temps||`` dans le bloc ``||loops: répéter 3 fois||``.
+Ajoute le bloc ``||logic: si vrai alors sinon si||`` sous le bloc ``||variables: définir Degres||``.
+
+Ajoute des conditions en tout en appuyant sur le bouton ``||logic: +||``.
+
+Regarde l'indice au besoin.
 
 ```blocks
 
-let Temps = 0
-input.onButtonPressed(Button.A, function () {
-    Temps = 4
-    for (let index = 0; index < 3; index++) {
-        music.playTone(262, music.beat(BeatFraction.Quarter))
+let Degres = 0
+basic.forever(function () {
+    Degres = input.compassHeading()
+    if (true) {
+        
+    } else if (false) {
+        
+    } else if (false) {
+
+    } else if (false) {
+
+    } else {
+        
     }
 })
 
@@ -59,19 +74,23 @@ input.onButtonPressed(Button.A, function () {
 
 ## Étape 5
 
-Ajoute le bloc ``||basic: montrer nombre||`` sous le bloc ``||music: jouer ton Middle C pendant 1/4 temps||``.
-
-Ajoute le bloc ``||basic: pause (ms) 100||`` sous le bloc ``||basic: montrer nombre||``.
+Remplace la valeur ``||logic: vrai||`` par le bloc ``||logic: 0 < 0||`` dans le bloc ``||logic: si||``.
 
 ```blocks
 
-let Temps = 0
-input.onButtonPressed(Button.A, function () {
-    Temps = 4
-    for (let index = 0; index < 3; index++) {
-        music.playTone(262, music.beat(BeatFraction.Quarter))
-        basic.showNumber(0)
-        basic.pause(100)
+let Degres = 0
+basic.forever(function () {
+    Degres = input.compassHeading()
+    if (0 < 0) {
+        
+    } else if (false) {
+        
+    } else if (false) {
+
+    } else if (false) {
+        
+    } else {
+        
     }
 })
 
@@ -79,21 +98,27 @@ input.onButtonPressed(Button.A, function () {
 
 ## Étape 6
 
-Ajoute le bloc ``||math: "0" - "0"||`` dans le bloc ``||basic: montrer nombre||``.
+Remplace la valeur ``||logic: 0 ||`` de gauche du bloc ``||logic: 0 < 0||`` par le bloc ``||variables:Degres||``.
 
-Remplace la valeur ``||math: 0 ||`` de gauche par le bloc ``||variables:Temps||``.
+Remplace la valeur ``||logic: 0 ||`` de droite du bloc ``||logic: 0 < 0||`` par la valeur ``||logic: 45 ||``.
 
-Remplace la valeur ``||math: 0 ||`` de droite par la valeur ``||math: 1 ||``. 
+La valeur 45 représente la coordonnée nord-est.
 
 ```blocks
 
-let Temps = 0
-input.onButtonPressed(Button.A, function () {
-    Temps = 4
-    for (let index = 0; index < 3; index++) {
-        music.playTone(262, music.beat(BeatFraction.Quarter))
-        basic.showNumber(Temps - 1)
-        basic.pause(100)
+let Degres = 0
+basic.forever(function () {
+    Degres = input.compassHeading()
+    if (Degres < 45) {
+        
+    } else if (false) {
+
+    } else if (false) {
+
+    } else if (false) {
+        
+    } else {
+        
     }
 })
 
@@ -101,67 +126,79 @@ input.onButtonPressed(Button.A, function () {
 
 ## Étape 7
 
-Ajoute le bloc ``||variables: modifier Temps 1||`` sous le bloc ``||basic: pause (ms) 100)||``.
+Ajoute le bloc ``||basic: afficher le texte||`` sous le bloc ``||logic: si < 45||``.
 
-Remplace la valeur ``||variables: 1||`` par ``||variables: -1||`` dans le bloc ``||variables: modifier Temps de 1||``.
+Remplace la valeur du bloc ``||basic: afficher le texte||`` par la lettre ``||basic: N ||``.
 
 ```blocks
 
-let Temps = 4
-for (let index = 0; index < 3; index++) {
-    music.playTone(262, music.beat(BeatFraction.Quarter))
-    basic.showNumber(Temps - 1)
-    basic.pause(100)
-    Temps += -1
-}
+let Degres = 0
+basic.forever(function () {
+    Degres = input.compassHeading()
+    if (Degres < 45) {
+        basic.showString("Hello")
+    } else if (false) {
+
+    } else if (false) {
+
+    } else if (false) {
+        
+    } else {
+        
+    }
+})
 
 ```
 
 ## Étape 8
 
-Ajoute le bloc ``||music: jouer ton Middle G pendant 1 temps||`` sous le bloc ``||loops: répéter 3 fois||``.
+Ajoute le bloc ``||basic: afficher le texte||`` sous le dernier bloc ``||logic: sinon||``.
+
+Remplace la valeur du bloc ``||basic: afficher le texte||`` par la lettre ``||basic: N ||``.
 
 ```blocks
 
-let Temps = 0
-input.onButtonPressed(Button.A, function () {
-    Temps = 4
-    for (let index = 0; index < 3; index++) {
-        music.playTone(262, music.beat(BeatFraction.Quarter))
-        basic.showNumber(Temps - 1)
-        basic.pause(100)
-        Temps += 1
+let Degres = 0
+basic.forever(function () {
+    Degres = input.compassHeading()
+    if (Degres < 45) {
+        basic.showString("N")
+    } else if (false) {
+
+    } else if (false) {
+        
+    } else if (false) {
+        
+    } else {
+        basic.showString("N")
     }
-    music.playTone(392, music.beat(BeatFraction.Whole))
 })
 
 ```
-## Étape 9
 
-Ajoute le bloc ``||basic:afficher texte ||`` sous le bloc ``||music: jouer ton Middle G pendant 1 temps||``.
+## @showdialog
 
-Remplace le texte du bloc ``||basic: affiche texte ||`` par ``||basic: Go! ||``.
+Oups! Les étapes pour programmer les autres points cardinaux ont disparu.
 
-```blocks
+Programme le micro:bit pour qu'il puisse afficher les autres points cardinaux.
 
-let Temps = 0
-input.onButtonPressed(Button.A, function () {
-    Temps = 4
-    for (let index = 0; index < 3; index++) {
-        music.playTone(262, music.beat(BeatFraction.Quarter))
-        basic.showNumber(Temps - 1)
-        basic.pause(100)
-        Temps += 1
-    }
-    music.playTone(392, music.beat(BeatFraction.Whole))
-    basic.showString("Go!")
-})
+La valeur < 45 représente le point cardninal ``||input: nord||``.
 
+La valeur < 135 représente le point cardninal ``||input: est||``.
 
-```
+La valeur < 225 représente le point cardninal ``||input: sud||``.
 
-## Étape 10
+La valeur < 315 représente le point cardninal ``||input: ouest||`` .
+
+## Étape 8
 
 Télécharge le programme dans le micro:bit.
 
-Teste le programme!
+Tu devras sans doute calibrer la boussole avant de l'utiliser.
+
+Tourne le microbit doucement dans tous les sens pour activer toutes les LEDs de l'écran.
+
+Teste le programme ! 
+
+Quel bâtiment et/ou lieu retrouve-t-on au nord de l'école ? au sud ? à l'est ? à l'ouest ?
+
