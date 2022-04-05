@@ -1,4 +1,4 @@
-# Niveau 2
+# tuto_9
 
 ## @showdialog
 
@@ -56,7 +56,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 5
 
-Ajoute le bloc ``||logic: "0" = "0"||`` dans le bloc ``||logic: si vrai alors||``.
+Ajoute le bloc ``||logic: 0" = "0||`` dans le bloc ``||logic: si vrai alors||``.
 
 ```blocks
 
@@ -72,9 +72,9 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 6
 
-Remplace la valeur ``||logic: 0||`` de gauche du bloc ``||logic: "0" = "0"||`` par le bloc ``||variables:Nombre||``.
+Remplace la valeur ``||logic: 0||`` de gauche du bloc ``||logic: 0 = 0||`` par le bloc ``||variables:Nombre||``.
 
-Remplace la valeur ``||logic: 0||`` de droite du bloc ``||logic: "0" = "0"||`` par la valeur ``||logic: 1||``.
+Remplace la valeur ``||logic: 0||`` de droite du bloc ``||logic: 0 = 0||`` par la valeur ``||logic: 1||``.
 
 ```blocks
 
