@@ -2,7 +2,7 @@
 
 ## @showdialog
 
-Roche, papier, ciseau... allumettes!
+Roche, papier, ciseaux... allumettes!
 
 ## Étape 1
 
