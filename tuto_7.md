@@ -10,7 +10,7 @@ Supprime le bloc ``||basic:au démarrage||``.
 
 ## Étape 2
 
-Crée une ``||variables: variable||`` et donne lui le nom ``||variables:lumiere||``. (sans accent sur le "è")
+Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Lumiere||``. (sans accent sur le "è")
 
 Ajoute le bloc ``||variables: définir Lumiere à "0"||`` dans le bloc ``||basic: toujours||``.
 
@@ -25,7 +25,7 @@ basic.forever(function () {
 
 ## Étape 3
 
-Remplace la valeur ``||variables: 0||`` du bloc ``||variables: définir luminosité à "0"||`` par le bloc ``||input: niveau d'intensité lumineuse||``. 
+Remplace la valeur ``||variables: 0||`` du bloc ``||variables: définir Lumiere ||`` par le bloc ``||input: niveau d'intensité lumineuse||``. 
 
 
 ```blocks
@@ -79,7 +79,7 @@ Remplace la valeur ``|| logic: 0 ||`` à la gauche du bloc ``|| logic: 0 < 0||``
 
 Remplace la valeur ``|| logic: 0 ||`` à la droite du bloc ``|| logic: 0 < 0||`` par la valeur ``|| logic: 40 ||``.
 
-Lorsque le niveau d'intensité lumieuse est sous 40 dans une pièce, il fait généralement sombre! Passe ta main au-dessous du micro:bit au besoin.
+Lorsque le niveau d'intensité lumieuse est sous 40 dans une pièce, il fait généralement sombre! 
 
 ```blocks
 
@@ -99,7 +99,7 @@ basic.forever(function () {
 
 Ajoute le bloc ``|| basic: Montrer LEDs ||`` sous le bloc ``|| logic: si ||``.
 
-Remplis les 25 cases ppur activer toutes les LEDs du micro:bit.
+Remplis les 25 cases pour activer toutes les LEDs du micro:bit.
 
 Lorsque le niveau d'intensité lumineuse sera sous 40, l'image dessinée devrait s'afficher sur l'écran du micro:bit.
 
