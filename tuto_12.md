@@ -1,16 +1,18 @@
 # Niveau 3
 
+# tuto_12
+
 ## @showdialog
 
 Compose une mélodie !
 
 ## Étape 1
 
-Supprime le bloc ``||basic:toujours||``.
+Supprime les blocs ``||basic: au démarrage ||`` et ``||basic: toujours ||``.
 
 ## Étape 2
 
-Ajoute le bloc ``||music: régler le tempo à (bpm) 120 ||`` dans le bloc ``||basic: au démarrage||``.
+Ajoute le bloc ``||music: régler le tempo à (bpm) 120 ||`` dans le bloc ``||input: lorsque le bouton A est pressé||``.
 
 ```blocks
 
@@ -22,7 +24,7 @@ music.setTempo(120)
 
 Ajoute les blocs ``||music: jouer ton Middle pendant 1 temps ||`` dans le bloc ``||input: lorsque le bouton A est pressé||``.
 
-Regarde l'indice.
+Attention ! Plusieurs blocs sont différents.
 
 ```blocks
 
@@ -38,8 +40,6 @@ input.onButtonPressed(Button.A, function () {
 ## Étape 4
 
 Ajoute la séquence de notes musicales dans le bloc ``||loops: répéter 2 fois ||``.
-
-Regarde l'indice.
 
 ```blocks
 
@@ -58,9 +58,9 @@ input.onButtonPressed(Button.A, function () {
 
 Ajoute les blocs ``||music: jouer ton Middle pendant 1 temps ||`` sous le bloc ``||loops: répéter 2 fois ||``.
 
-Attention, la dernière note joue pendant 2 temps.
+Attention ! Plusieurs blocs sont différents.
 
-Regarde l'indice.
+Attention ! La dernière note joue pendant 2 temps.
 
 ```blocks
 
@@ -75,7 +75,6 @@ input.onButtonPressed(Button.A, function () {
     music.playTone(349, music.beat(BeatFraction.Whole))
     music.playTone(392, music.beat(BeatFraction.Double))
 })
-
 
 ```
 
@@ -98,7 +97,6 @@ input.onButtonPressed(Button.A, function () {
         music.playTone(392, music.beat(BeatFraction.Double))
     }
 })
-
 
 ```
 
@@ -146,4 +144,5 @@ Télécharge le programme dans le micro:bit.
 
 Teste le programme! 
 
-Relis les écouteurs au micro:bit avec des pinces alligators si possible!
+Relis les écouteurs au micro:bit avec des pinces alligators.
+
