@@ -1,4 +1,4 @@
-# Niveau 2
+# tuto_10
 
 ## @showdialog
 
@@ -12,7 +12,7 @@ Supprime les blocs ``||basic:au démarrage||`` et ``||basic:toujours||``.
 
 Crée une ``||variables: variable||`` et donne lui le nom ``||variables:Main||``.
 
-Ajoute le bloc ``||variables: définir Nombre à "0"||`` dans le bloc ``||input: lorsque secouer||``.
+Ajoute le bloc ``||variables: définir Main à "0"||`` dans le bloc ``||input: lorsque secouer||``.
 
 ```blocks
 
@@ -56,7 +56,7 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 5
 
-Remplace le bloc ``||logic: vrai||`` par le bloc ``||logic: "0" = "0"||`` dans le bloc ``||logic: si alors||``.
+Remplace la valeur ``||logic: vrai||`` par le bloc ``||logic: 0 = 0||`` dans le bloc ``||logic: si alors||``.
 
 ```blocks
 
@@ -72,9 +72,9 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 6
 
-Remplace la valeur ``||logic: 0||`` de gauche du bloc ``||logic: "0" = "0"||`` par le bloc ``||variables:Main||``.
+Remplace la valeur ``||logic: 0||`` de gauche du bloc ``||logic: 0 = 0||`` par le bloc ``||variables:Main||``.
 
-Remplace la valeur ``||logic: 0||`` de droite du bloc ``||logic: "0" = "0"||`` par la valeur ``||logic: 1||``.
+Remplace la valeur ``||logic: 0||`` de droite du bloc ``||logic: 0 = 0||`` par la valeur ``||logic: 1||``.
 
 La valeur 1 représente les ``||logic: ciseaux||``.
 
@@ -92,7 +92,9 @@ input.onGesture(Gesture.Shake, function () {
 
 ## Étape 7
 
-Ajoute le bloc ``||basic: montrer l'icône||`` sous le bloc ``||logic: si Main = 1||``.
+Ajoute le bloc ``||basic: montrer l'icône||`` sous le bloc ``||logic: si alors ||``.
+
+Choisis ``||basic: la paire de ciseaux||`` comme icône.
 
 Ajoute le bloc ``||basic: pause (ms) 2000||`` sous le bloc ``||basic: montrer l'icône||``.
 
@@ -102,7 +104,6 @@ Ajoute le bloc ``||basic: effacer l'écran||`` sous le bloc ``||basic: pause (ms
 
 let Main = 0
 input.onGesture(Gesture.Shake, function () {
-    basic.pause(1000)
     Main = randint(1, 3)
     if (Main == 1) {
         basic.showIcon(IconNames.Scissors)
