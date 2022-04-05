@@ -26,7 +26,7 @@ input.onButtonPressed(Button.A, function () {
 ```
 ## @showdialog
 
-Parfois, il vaut mieux de faire réaliser des sauts (ex. : 25 degrés, 30.., 35.., etc) au servomoteur dans le but de réaliser un angle supérieur ou égal à 90.
+Parfois, il vaut mieux faire réaliser des sauts (ex. : 25 degrés, 30.., 35.., etc) au servomoteur dans le but de réaliser un angle supérieur ou égal à 90.
 
 ## Étape 3
 
@@ -47,7 +47,18 @@ input.onButtonPressed(Button.B, function () {
 
 Ajoute le bloc ``||basic: pause (ms) 100 ||`` sous le bloc ``||pins: régler position servo ||`` dans le bloc ``||input: lorsque le bouton B est pressé||``.
 
-Ajoute le bloc ``||pins: régler position servo ||`` sous le bloc ``||basic: pause (ms) 100 ||``.
+Modifie la valeur du bloc ``||basic: pause (ms) 100 ||`` pour ``||basic: 200 ||``.
+
+```blocks
+input.onButtonPressed(Button.B, function () {
+    pins.servoWritePin(AnalogPin.P1, 45)
+    basic.pause(200)
+    })
+```
+
+## Étape 5
+
+Ajoute le bloc ``||pins: régler position servo ||`` sous le bloc ``||basic: pause (ms) 200 ||``.
 
 Modifie le ``||pins: degré ||`` pour ``||pins: 90 ||``.
 
@@ -56,24 +67,22 @@ input.onButtonPressed(Button.B, function () {
     pins.servoWritePin(AnalogPin.P1, 45)
     basic.pause(200)
     pins.servoWritePin(AnalogPin.P1, 90)
-})
+    })
 ```
+## Étape 6
 
-## Étape 5
-
-Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc ``||input: lorsque le bouton A+B est pressé||``.
-
-Modifie la valeur de la ``||pins: broche ||`` ``||pins: P0 ||`` pour ``||pins: P1 ||``.
-
-Modifie le ``||pins: degré ||`` pour ``||pins: 0 ||``.
+Ajoute le bloc ``||basic: pause (ms) 100 ||`` sous le bloc ``||pins: régler position servo ||`` dans le bloc ``||input: lorsque le bouton B est pressé||``.
 
 ```blocks
-input.onButtonPressed(Button.AB, function () {
-    pins.servoWritePin(AnalogPin.P0, 0)
+
+input.onButtonPressed(Button.B, function () {
+    pins.servoWritePin(AnalogPin.P1, 45)
+    basic.pause(200)
+    pins.servoWritePin(AnalogPin.P1, 90)
+    basic.pause(100)
 })
 
 ```
-
 ## @showdialog
 
 Assure-toi que la paille pointe vers la terre lorsque l'angle est à 0.
