@@ -119,7 +119,7 @@ loops.everyInterval(10000, function () {
 
 ## Étape 9
 
-Remplace la valeur  ``|| vrai ||`` par le bloc ``||logic: 0 > 0  ||``.
+Remplace la valeur  ``||logic: vrai  ||`` par le bloc ``||logic: 0 > 0  ||``.
 
 ```blocks
 let Terre = 0
@@ -155,7 +155,7 @@ loops.everyInterval(10000, function () {
 
 ## Étape 11
 
-Remplace la valeur  ``||logic: 0  ||`` de droite du bloc ``||logic: 0 > 0  ||`` par la valeur calculée.
+Remplace la valeur  ``||logic: 0  ||`` de droite du bloc ``||logic: 0 > 0  ||`` par la valeur calculée (ex. : 350).
 
 ```blocks
 let Terre = 0
@@ -163,7 +163,7 @@ loops.everyInterval(10000, function () {
     Terre = pins.analogReadPin(AnalogPin.P0)
     basic.showNumber(Math.round(Terre))
     basic.pause(1000)
-    if (Terre > 0) {
+    if (Terre > 350) {
     	
     } else {
     	
@@ -179,20 +179,25 @@ Modifie la valeur de la ``||pins: broche ||`` ``||pins: P0 ||`` pour ``||pins: P
 
 Modifie le ``||pins: degré ||`` pour ``||pins: l'angle souhaité ||``.
 
-Ajoute le bloc ``||basic: pause (ms) 100 ||`` sous le bloc ``||pins: régler position servo ||``.
+Ajoute le bloc ``||basic: pause (ms) 200 ||`` sous le bloc ``||pins: régler position servo ||``.
 
-Ajoute le bloc ``||basic: pause (ms) 100 ||`` sous le bloc ``||pins: régler position servo ||``.
+Fais réaliser des bonds au servomoteur pour te rendre à l'angle souhaité (ex. : 110).
 
-Fais réaliser des bonds au servomoteur pour te rendre à l'angle souhaité. Ajoute un bloc  ``||basic: pause (ms) 100 ||`` après chaque bond.
+Ajoute un bloc  ``||basic: pause (ms) 200 ||`` après chaque bond.
 
 ```blocks
+
 let Terre = 0
 loops.everyInterval(10000, function () {
     Terre = pins.analogReadPin(AnalogPin.P0)
     basic.showNumber(Math.round(Terre))
     basic.pause(1000)
-    if (Terre > 0) {
+    if (Terre > 350) {
         pins.servoWritePin(AnalogPin.P1, 45)
+        basic.pause(200)
+        pins.servoWritePin(AnalogPin.P1, 90)
+        basic.pause(200)
+        pins.servoWritePin(AnalogPin.P1, 110)
         basic.pause(100)
     } else {
     	
@@ -202,9 +207,7 @@ loops.everyInterval(10000, function () {
 
 ## Étape 13
 
-Ajoute le bloc ``||basic: pause (ms) 100 ||`` sous le bloc ``||pins: régler position servo ||``.
-
-Modifie la valeur ``||basic: 100 ||`` du bloc ``||basic: pause (ms) ||`` par ``||basic: 2000 ||``
+Modifie la valeur ``||basic: 200 ||`` du bloc ``||basic: pause (ms) ||`` par ``||basic: 2000 ||``.
 
 ```blocks
 
@@ -213,7 +216,11 @@ loops.everyInterval(10000, function () {
     Terre = pins.analogReadPin(AnalogPin.P0)
     basic.showNumber(Math.round(Terre))
     basic.pause(1000)
-    if (Terre > 0) {
+    if (Terre > 350) {
+        pins.servoWritePin(AnalogPin.P1, 45)
+        basic.pause(200)
+        pins.servoWritePin(AnalogPin.P1, 90)
+        basic.pause(200)
         pins.servoWritePin(AnalogPin.P1, 110)
         basic.pause(2000)
     } else {
@@ -228,7 +235,7 @@ Ajoute le bloc ``||pins: régler position servo ||`` sous le bloc ``||basic: pau
 
 Modifie la valeur de la ``||pins: broche ||`` ``||pins: P0 ||`` pour ``||pins: P1 ||``.
 
-Modifie le ``||pins: degré ||`` pour ``||pins: l'angle souhaité ||``.
+Modifie le ``||pins: degré ||`` pour ``||pins: 0 ||``.
 
 ```blocks
 let Terre = 0
@@ -236,7 +243,11 @@ loops.everyInterval(10000, function () {
     Terre = pins.analogReadPin(AnalogPin.P0)
     basic.showNumber(Math.round(Terre))
     basic.pause(1000)
-    if (Terre > 0) {
+    if (Terre > 350) {
+        pins.servoWritePin(AnalogPin.P1, 45)
+        basic.pause(200)
+        pins.servoWritePin(AnalogPin.P1, 90)
+        basic.pause(200)
         pins.servoWritePin(AnalogPin.P1, 110)
         basic.pause(2000)
         pins.servoWritePin(AnalogPin.P1, 0)
@@ -256,8 +267,14 @@ loops.everyInterval(10000, function () {
     Terre = pins.analogReadPin(AnalogPin.P0)
     basic.showNumber(Math.round(Terre))
     basic.pause(1000)
-    if (Terre > 0) {
+    if (Terre > 350) {
+        pins.servoWritePin(AnalogPin.P1, 45)
+        basic.pause(200)
+        pins.servoWritePin(AnalogPin.P1, 90)
+        basic.pause(200)
         pins.servoWritePin(AnalogPin.P1, 110)
+        basic.pause(2000)
+        pins.servoWritePin(AnalogPin.P1, 0)
     } else {
         basic.showIcon(IconNames.Heart)
     }
@@ -304,40 +321,57 @@ Ajoute le bloc ``||pins: régler position servo ||`` sous le bloc ``||input: lor
 
 Modifie la valeur de la ``||pins: broche ||`` ``||pins: P0 ||`` pour ``||pins: P1 ||``.
 
-Modifie le ``||pins: degré ||`` pour ``||pins: l'angle souhaité ||``.
+Modifie le ``||pins: degré ||`` pour ``||pins: 45 ||``.
+
+Ajoute le bloc ``||basic: pause (ms) 200 ||`` sous le bloc ``||pins: régler position servo ||``.
+
+Fais réaliser des bonds au servomoteur pour te rendre à l'angle souhaité (ex. : 110).
+
+Ajoute un bloc  ``||basic: pause (ms) 200 ||`` après chaque bond.
 
 ```blocks
 input.onButtonPressed(Button.B, function () {
-    pins.digitalWritePin(DigitalPin.P1, 110)
+    pins.servoWritePin(AnalogPin.P1, 45)
+    basic.pause(200)
+    pins.servoWritePin(AnalogPin.P1, 90)
+    basic.pause(200)
+    pins.servoWritePin(AnalogPin.P1, 110)
+    basic.pause(200)
 })
 ```
 
 ## Étape 20
 
-Ajoute le bloc ``||basic: pause (ms) 100 ||`` sous le bloc ``||pins: régler position servo ||``.
-
-Modifie la valeur ``||basic: 100 ||`` du bloc ``||basic: pause (ms) ||`` par ``||basic: 2000 ||``
+Modifie la valeur ``||basic: 200 ||`` du dernier bloc ``||basic: pause (ms) ||`` par ``||basic: 2000 ||``
 
 ```blocks
 input.onButtonPressed(Button.B, function () {
-    pins.digitalWritePin(DigitalPin.P1, 0)
+    pins.servoWritePin(AnalogPin.P1, 45)
+    basic.pause(200)
+    pins.servoWritePin(AnalogPin.P1, 90)
+    basic.pause(200)
+    pins.servoWritePin(AnalogPin.P1, 110)
     basic.pause(2000)
-})
-```
+    })
 
+```
 ## Étape 21
 
-Ajoute le bloc ``||pins: régler position servo ||`` sous le bloc ``||basic: pause (ms) 2000  ||``.
+Ajoute le bloc ``||pins: régler position servo ||`` sous le bloc``||basic: pause (ms) 2000 ||``.
 
 Modifie la valeur de la ``||pins: broche ||`` ``||pins: P0 ||`` pour ``||pins: P1 ||``.
 
-Modifie le ``||pins: degré ||`` pour ``||pins: l'angle souhaité ||``.
+Modifie le ``||pins: degré ||`` pour ``||pins: 0 ||``.
 
 ```blocks
 input.onButtonPressed(Button.B, function () {
-    pins.digitalWritePin(DigitalPin.P1, 110)
+    pins.servoWritePin(AnalogPin.P1, 45)
+    basic.pause(200)
+    pins.servoWritePin(AnalogPin.P1, 90)
+    basic.pause(200)
+    pins.servoWritePin(AnalogPin.P1, 110)
     basic.pause(2000)
-    pins.digitalWritePin(DigitalPin.P1, 0)
+    pins.servoWritePin(AnalogPin.P1, 0)
 })
 ```
 
@@ -347,10 +381,10 @@ Ajoute le bloc ``||pins: régler position servo ||`` dans le bloc``||basic: au d
 
 Modifie la valeur de la ``||pins: broche ||`` ``||pins: P0 ||`` pour ``||pins: P1 ||``.
 
-Modifie le ``||pins: degré ||`` pour ``||pins: l'angle souhaité ||``.
+Modifie le ``||pins: degré ||`` pour ``||pins: 0 ||``.
 
-Assure-toi que la paille ne touche ni à l'eau ni à la terre au démarrage.
+Assure-toi que la paille pointe vers la terre au démarrage.
 
 ```blocks
-pins.servoWritePin(AnalogPin.P1, 45)
+pins.servoWritePin(AnalogPin.P1, 0)
 ```
