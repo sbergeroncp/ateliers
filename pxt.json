@@ -42,7 +42,8 @@
         "tuto_arro_2.md",
         "tuto_15_b.md",
         "tuto_15_a.md",
-        "tuto_6_a.md"
+        "tuto_6_a.md",
+        "tuto_6_d.md"
     ],
     "testFiles": [
         "test.ts"

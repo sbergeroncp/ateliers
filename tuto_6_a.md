@@ -1,6 +1,6 @@
 # Niveau 2
 
-# Tutoriel 6
+# Tutoriel bonus C
 
 ## @showdialog
 
@@ -8,7 +8,7 @@ Affiche la température ambiante sur l'écran du micro:bit à l'aide d'un graphi
 
 ## Étape 1
 
-Supprime le blocs ``||basic:toujours||``
+Supprime le bloc ``||basic:toujours||``
 
 ## Étape 2
 
@@ -34,7 +34,7 @@ let Temperature = input.temperature()
 
 ## Étape 4
 
-Ajoute le bloc ``||led: tracer le graphique||`` dans le bloc ``||input: lorsque le bouton A est pressé||``.
+Ajoute le bloc ``||led: tracer le graphique||`` dans le bloc ``||input: lorsque le bouton A+B est pressé||``.
 
 ```blocks
 
@@ -67,14 +67,14 @@ Temperature = input.temperature()
 
 ## Étape 6
 
-Remplace la deuxième valeur ``|| led: 0||`` du bloc ``|| led: tracer le graphique||`` par la valeur ``|| led: 255||``.
+Remplace la deuxième valeur ``|| led: 0||`` du bloc ``|| led: tracer le graphique||`` par la valeur ``|| led: 50||``.
 
 ```blocks
 
 input.onButtonPressed(Button.AB, function () {
     led.plotBarGraph(
     Temperature,
-    255
+    50
     )
 })
 let Temperature = 0
