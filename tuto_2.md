@@ -4,7 +4,7 @@
 
 ## @showdialog
 
-Fais apparaître une image choisie lorsque le micro:bit est activé.
+Fais apparaître une image sélectionnée lorsque le micro:bit est activé.
 
 ## Étape 1
 
@@ -14,7 +14,7 @@ Supprime le bloc ``||basic:au démarrage||``.
 
 Ajoute le bloc ``|| basic: montrer l'icône ||`` dans le bloc ``||basic: toujours||``.
 
-Choisis une icône dans le bloc ``|| basic: montrer l'icône ||``.
+Sélectionne une icône dans le bloc ``|| basic: montrer l'icône ||``.
 
 
 ```blocks

@@ -32,7 +32,7 @@ input.onButtonPressed(Button.A, function () {
 
 ## Étape 3
 
-Conserve ta séquence de programmation. Ajoute une nouvelle séquence.
+Conserve ta séquence de programmation et ajoute-en une nouvelle.
 
 Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input: lorsque le bouton B est pressé||``.
 
@@ -54,7 +54,7 @@ input.onButtonPressed(Button.B, function () {
 
 ## Étape 4
 
-Conserve tes séquences de programmation. Ajoute une nouvelle séquence.
+Conserve tes séquences de programmation et ajoute-en une nouvelle.
 
 Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input: lorsque le bouton A+B est pressé||``.
 
