@@ -25,9 +25,9 @@ basic.forever(function () {
 
 ## Étape 3
 
-Efface le mot "Hello" du bloc ``|| basic: afficher texte ||``.
+Efface le mot ``|| basic: Hello! ||` du bloc ``|| basic: afficher texte ||``.
 
-Écris ton prénom dans le ``|| basic: afficher texte ||`` (ex. : Seb).
+Écris ton prénom dans le bloc ``|| basic: afficher texte ||`` (ex. : Seb).
 
 ```blocks
 
