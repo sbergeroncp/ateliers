@@ -124,7 +124,7 @@ input.onButtonPressed(Button.B, function () {
 
 ## Étape 10
 
-Ajoute le bloc ``|| basic: pause (ms) 100 ||`` sous le bloc ``|| led: allumer x y ||``.
+Ajoute le bloc ``|| basic: pause (ms) 100 ||`` sous le bloc ``|| led: éteindre x y ||``.
 
 Regarde l'indice.
 
