@@ -4,7 +4,7 @@
 
 ## @showdialog
 
-Crée une animation simple et sportive avec les blocs LED du micro:bit.
+Crée une animation d'une chauve-souris volante avec les blocs LED du micro:bit.
 
 ## Étape 1
 
@@ -14,7 +14,7 @@ Supprime les blocs ``||basic:au démarrage||`` et ``||basic:toujours||``.
 
 Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input: lorsque le bouton A est pressé||``.
 
-Dessine un athlète dans dans le bloc ``|| basic: montrer LEDs ||``.
+Dessine chauve-souris dans dans le bloc ``|| basic: montrer LEDs ||``.
 
 Regarde l'indice.
 
@@ -22,13 +22,14 @@ Regarde l'indice.
 
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
-        # . # . #
+        # . . . #
+        # # . # .
         . # # # .
         . . # . .
-        . # . # .
-        # . . . #
+        . . . . .
         `)
 })
+
 
 ```
 
@@ -36,7 +37,7 @@ input.onButtonPressed(Button.A, function () {
 
 Ajoute le bloc ``|| basic: montrer LEDs ||`` sous le bloc ``|| basic: montrer LEDs ||``.
 
-Dessine un athlète dans dans le bloc ``|| basic: montrer LEDs ||``.
+Dessine une chauve-souris dans dans le bloc ``|| basic: montrer LEDs ||``.
 
 Regarde l'indice.
 
@@ -44,20 +45,21 @@ Regarde l'indice.
 
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
-        # . # . #
+        # . . . #
+        # # . # .
         . # # # .
         . . # . .
-        . # . # .
-        # . . . #
+        . . . . .
         `)
     basic.showLeds(`
-        . . # . .
+        . . . . .
+        # # . # #
         # # # # #
         . . # . .
-        . # . # .
-        # . . . #
+        . . . . .
         `)
 })
+
 
 ```
 
@@ -65,7 +67,7 @@ input.onButtonPressed(Button.A, function () {
 
 Ajoute le bloc ``|| basic: montrer LEDs ||`` sous le bloc ``|| basic: montrer LEDs ||``.
 
-Dessine un athlète dans dans le bloc ``|| basic: montrer LEDs ||``.
+Dessine une chauve-souris dans dans le bloc ``|| basic: montrer LEDs ||``.
 
 Regarde l'indice.
 
@@ -73,28 +75,27 @@ Regarde l'indice.
 
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
-        # . # . #
+        # . . . #
+        # # . # .
         . # # # .
         . . # . .
-        . # . # .
-        # . . . #
+        . . . . .
         `)
     basic.showLeds(`
-        . . # . .
+        . . . . .
+        # # . # #
         # # # # #
         . . # . .
-        . # . # .
-        # . . . #
+        . . . . .
         `)
     basic.showLeds(`
-        . . # . .
-        . # # # .
-        . # # # .
+        . . . . .
         . # . # .
-        # . . . #
+        # # # # #
+        # . # . #
+        . . . . .
         `)
 })
-
 
 ```
 
@@ -102,7 +103,7 @@ input.onButtonPressed(Button.A, function () {
 
 Ajoute le bloc ``|| basic: montrer LEDs ||`` dans le bloc ``||input: lorsque le bouton B est pressé||``.
 
-Dessine un athlète dans dans le bloc ``|| basic: montrer LEDs ||``.
+Dessine une chauve-souris dans dans le bloc ``|| basic: montrer LEDs ||``.
 
 Regarde l'indice.
 
@@ -110,10 +111,10 @@ Regarde l'indice.
 
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
-        . . # . .
+        . . . . .
+        . . . . .
         . # # # .
-        . # # # .
-        . # . # .
+        # # . # #
         # . . . #
         `)
 })
@@ -124,7 +125,7 @@ input.onButtonPressed(Button.B, function () {
 
 Ajoute le bloc ``|| basic: montrer LEDs ||`` sous le bloc ``|| basic: montrer LEDs ||``.
 
-Dessine un athlète dans dans le bloc ``|| basic: montrer LEDs ||``.
+Dessine une chauve-souris dans dans le bloc ``|| basic: montrer LEDs ||``.
 
 Regarde l'indice.
 
@@ -132,18 +133,18 @@ Regarde l'indice.
 
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
-        . . # . .
+        . . . . .
+        . . . . .
         . # # # .
-        . # # # .
-        . # . # .
+        # # . # #
         # . . . #
         `)
     basic.showLeds(`
-        . . # . .
-        . # # # .
-        # . # . #
-        . # . # .
-        # . . . #
+        . . . . .
+        . . . . .
+        # # # # #
+        # # . # #
+        . . . . .
         `)
 })
 
@@ -153,7 +154,7 @@ input.onButtonPressed(Button.B, function () {
 
 Ajoute le bloc ``|| basic: montrer LEDs ||`` sous le bloc ``|| basic: montrer LEDs ||``.
 
-Dessine un athlète dans dans le bloc ``|| basic: montrer LEDs ||``.
+Dessine une chauve-souris dans dans le bloc ``|| basic: montrer LEDs ||``.
 
 Regarde l'indice.
 
@@ -161,28 +162,27 @@ Regarde l'indice.
 
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
-        . . # . .
+        . . . . .
+        . . . . .
         . # # # .
-        . # # # .
-        . # . # .
+        # # . # #
         # . . . #
         `)
     basic.showLeds(`
-        . . # . .
-        . # # # .
-        # . # . #
-        . # . # .
-        # . . . #
-        `)
-    basic.showLeds(`
-        . . # . .
+        . . . . .
+        . . . . .
         # # # # #
-        . . # . .
+        # # . # #
+        . . . . .
+        `)
+    basic.showLeds(`
+        . . . . .
+        # . # . #
+        # # # # #
         . # . # .
-        # . . . #
+        . . . . .
         `)
 })
-
 
 ```
 
