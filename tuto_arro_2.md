@@ -198,7 +198,7 @@ loops.everyInterval(10000, function () {
         pins.servoWritePin(AnalogPin.P1, 90)
         basic.pause(200)
         pins.servoWritePin(AnalogPin.P1, 110)
-        basic.pause(100)
+        basic.pause(200)
     } else {
     	
     }
@@ -207,7 +207,7 @@ loops.everyInterval(10000, function () {
 
 ## Étape 13
 
-Modifie la valeur ``||basic: 200 ||`` du bloc ``||basic: pause (ms) ||`` par ``||basic: 2000 ||``.
+Modifie la valeur ``||basic: 200 ||`` du dernier bloc ``||basic: pause (ms) ||`` par ``||basic: 2000 ||``.
 
 ```blocks
 
@@ -388,3 +388,9 @@ Assure-toi que la paille pointe vers la terre au démarrage.
 ```blocks
 pins.servoWritePin(AnalogPin.P1, 0)
 ```
+
+## @showdialog
+
+Télécharge la programmation du système d'arrosage dans le micro:bit.
+
+Bonne expérimentation!
